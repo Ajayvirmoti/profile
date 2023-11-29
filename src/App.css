@@ -1,0 +1,45 @@
+.App{
+  /* height: 100lvh; */
+  /* background-image: url("./img/w-t-Xcb6eJfvLVg-unsplash.jpg"); */
+  /* background-color: #005348; */
+  background-color: black;
+  /* background-size: 100%; */
+  /* color: white; */
+  /* padding-top: 50px; */
+  /* padding-left: 20%; */
+  /* padding-right: 20%; */
+  /* width:max-content; */
+  /* filter: blur(1px); */
+  
+}
+.blur{
+  /* background-image: url(""); */
+  /* background-color: #041b15; */
+  margin-top: 10%;
+  background-color: #161925;
+  height: 100lvh;
+  width:125%;
+  /* opacity: 40%; */
+  /* filter: blur(100px); */
+  /* filter: drop-shadow(300px); */
+  /* filter: saturate(200px); */
+  /* backdrop-filter: saturate(180%) blur(200px); */
+  text-align: center;
+}
+
+
+
+.resume {
+  display: list-item;
+  align-items: center;
+}
+
+.side-bar{
+  position:absolute;
+
+}
+
+.Home-Body {
+  background-color: red;
+  /* width: max-content; */
+}

@@ -1,0 +1,23 @@
+.side-bar{
+    display: grid;
+    align-content: center;
+    position: fixed;
+    width: 10px;
+    color: rgb(255, 255, 255);
+    height: 100lvh;
+    font-size: 30px;
+    padding: 10px;
+
+}
+
+.github{
+    padding: 10px;
+}
+
+.github :hover{
+    color: #286769;
+   
+}
+.linkedin{
+    padding: 10px;
+}

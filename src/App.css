@@ -1,8 +1,13 @@
 .App{
-  /* height: 100lvh; */
+  height: 100lvh;
   /* background-image: url("./img/w-t-Xcb6eJfvLVg-unsplash.jpg"); */
   /* background-color: #005348; */
-  background-color: black;
+  /* background-color: rgb(2,0,36);
+  background:rgb(0,41,43); */
+  /* background: radial-gradient(circle, rgba(0,41,43,1) 29%, rgba(0,0,0,1) 100%, rgba(0,255,224,1) 100%);  */
+  background: rgb(15,23,42);
+background: radial-gradient(circle, rgba(15,23,42,1) 29%, rgba(0,0,0,1) 100%, rgba(17,41,61,1) 100%);
+
   /* background-size: 100%; */
   /* color: white; */
   /* padding-top: 50px; */
@@ -19,7 +24,7 @@
   background-color: #161925;
   height: 100lvh;
   width:125%;
-  /* opacity: 40%; */
+  opacity: 40%;
   /* filter: blur(100px); */
   /* filter: drop-shadow(300px); */
   /* filter: saturate(200px); */

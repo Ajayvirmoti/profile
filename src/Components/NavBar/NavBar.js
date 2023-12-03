@@ -1,14 +1,40 @@
-import React from "react";
 import "./NavBar.css";
 import 'react-toggle/style.css';
 import { Triangle } from "react-loader-spinner";
 import { ClimbingBoxLoader } from "react-spinners";
 import { TfiDownload } from "react-icons/tfi";
+// import { TfiStackOverflow } from "react-icons/tfi";
+import { PiStackOverflowLogoThin } from "react-icons/pi";
+import { RiArchiveDrawerFill } from "react-icons/ri";
+import { HiOutlineEmojiHappy } from "react-icons/hi";
+import React, { useState, useEffect } from 'react';
 const NavBar = ({ theme, toggleTheme }) => {
+    const [isVisible, setIsVisible] = useState(true);
+
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+  
+      if (scrollTop > 50) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+    };
+  
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+
+
     return (
-        <div className="navbar">
+        <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
             <div className="loader-logo">
-                
+
                 <Triangle
                     height="50"
                     width="50"
@@ -22,19 +48,16 @@ const NavBar = ({ theme, toggleTheme }) => {
                 <div className="loader-logo-title"> Curriculum vitae </div>
             </div>
             <div className="navbar-item">
-                <ul className="navbar-item-ul">
-                <li> <button>About</button> </li>
-                <li> <button>About</button> </li>
-                <li> <button>About</button> </li>
-                <li> <button>About</button> </li>
-                <h1>hello</h1>
-                </ul>
-            </div>
-            <button className="navbar-resume-button">
-                    Resume <TfiDownload/>
-            </button>
+                <button>About <HiOutlineEmojiHappy/></button>
+                <button>Tech <PiStackOverflowLogoThin /></button>
+                <button>Archive </button>
+                <button>Tech </button>
+                <button className="navbar-resume-button">Resume <TfiDownload /></button>
 
-        </div>
+            </div>
+
+
+        </nav>
     )
 }
 

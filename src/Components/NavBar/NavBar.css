@@ -1,13 +1,26 @@
 .navbar {
-    /* position: fixed; */
+    
+
+    position: fixed;
     /* width: 100%; */
     display:flex;
     padding: 20px;
-    /* align-items: end; */
+    /* position:fixed; */
+    align-items: center;
+    /* align-content: space-between; */
+    /* background-color: #020306; */
     justify-content: space-between;
     /* align-content: space-between; */
     /* background-color: red; */
-    
+
+    /* for navbar auto hide*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    transition: transform 0.3s ease-in-out;
 }
 
 .loader-logo{
@@ -31,42 +44,31 @@
 }
 
 .navbar-item {
+    background-blend-mode:hard-light;
+    
     display: flex;
+    position: fixed;
+    right: 0;
+    /* justify-content: space-between; */
+    /* padding: 10px; */
+    /* width: 30px; */
     /* justify-items: center; */
     /* justify-content: center; */
     align-items: center;
-    margin-right: 90px;
+    /* margin-right: 90px; */
     /* color: aliceblue; */
     
 }
 
-.navbar-item-ul {
-    display: flex;
-    background-color:transparent;
-    /* align-content: space-between; */
-    list-style-type:none;
-
-    /* align-items: end; */
-   
-}
-
-.navbar-item-ul button{
+.navbar-item button{
+    padding: 20px;
     background-color: transparent;
     color: #00ffe0;
     border: 0px;
+
+
 }
-
-.navbar-item-ul li{
-    padding: 20px;
-}
-
-/* background: rgb(2,0,36);
-background:  */
-
 .navbar-resume-button{ 
-    /* border-radius: 40px; */
-    /* margin-top: 10px; */
-    /* padding-top: 10px; */
     height: 40px;
     color: white;
     background-color: #0f172a;
@@ -110,3 +112,14 @@ background:  */
 .navbar-resume-button:focus-within{
     outline-offset: 5px;
 }
+
+
+
+.navbar.visible {
+    transform: translateY(2);
+  }
+  
+  .navbar.hidden {
+    transform: translateY(-100%);
+  }
+  

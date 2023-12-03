@@ -6,6 +6,7 @@ import SideBar from './Components/SideBar';
 import { Triangle } from 'react-loader-spinner'
 import Resume from "./Components/Resume/Resume.js";
 import AnimatedCursor from 'react-animated-cursor';
+import About from './Components/About/About.js';
 const App = () => {
   return (
     <div className='App'>
@@ -18,16 +19,12 @@ const App = () => {
         outerScale={5}
         outerStyle={{
           mixBlendMode: 'exclusion'
-        }}
-
-
-        
-  
-        
+        }}  
       />
       <div className='App-Body'>
         <NavBar />
         <SideBar className="side-bar" />
+        <About/>
         
       </div>
       <div className='content'>

@@ -10,32 +10,37 @@ import { HiOutlineEmojiHappy } from "react-icons/hi";
 import React, { useState, useEffect } from 'react';
 const NavBar = ({ theme, toggleTheme }) => {
     const [isVisible, setIsVisible] = useState(true);
-
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [hasBackground, setHasBackground] = useState(false);
+    const title = "<Curriculum vitae/>"
     const handleScroll = () => {
-      const scrollTop = window.pageYOffset;
-  
-      if (scrollTop > 50) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-    };
-  
+        const currentScrollPos = window.pageYOffset;
+        const isScrollingDown = currentScrollPos > prevScrollPos;
+    
+        setIsVisible(!isScrollingDown || currentScrollPos < 10);
+        if (currentScrollPos > 1) {
+            setHasBackground(true);
+          } else {
+            setHasBackground(false);
+          }
+      
+        setPrevScrollPos(currentScrollPos);
+      };
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
   
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
-    }, []);
+    }, [prevScrollPos]);
 
 
 
     return (
-        <nav className={`navbar ${isVisible ? 'visible' : 'hidden'}`}>
+        <nav className={`navbar ${isVisible ? 'visible' : 'hidden'} ${hasBackground ? 'background' : ''}`}>
             <div className="loader-logo">
 
-                <Triangle
+                {/* <Triangle
                     height="50"
                     width="50"
                     // color="#09bc8a"
@@ -44,8 +49,8 @@ const NavBar = ({ theme, toggleTheme }) => {
                     ariaLabel="Ajay Virmoti"
                     wrapperStyle={{}}
                     visible={true}
-                />
-                <div className="loader-logo-title"> Curriculum vitae </div>
+                /> */}
+                <div className="loader-logo-title"> {title} </div>
             </div>
             <div className="navbar-item">
                 <button>About <HiOutlineEmojiHappy/></button>

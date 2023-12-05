@@ -6,17 +6,31 @@ import SideBar from './Components/SideBar';
 import { Triangle } from 'react-loader-spinner'
 import Resume from "./Components/Resume/Resume.js";
 import AnimatedCursor from 'react-animated-cursor';
-import About from './Components/About/About.js';
+import Inventory from './Components/Inventory/Inventory.js';
+import { SlArrowDown } from 'react-icons/sl';
+
+
 const App = () => {
+  const [atHome,setPage] = useState('False');
+  const [isSnapped, setIsSnapped] = useState(false);
+
+  const handleSnapClick = () => {
+    setIsSnapped(true);
+
+  }
+  const nextPageHandler = () =>{
+
+  }
   return (
-    <div className='App'>
+    
+    <div className={`app ${isSnapped ? 'snap' : ''}`}>
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
         color='255,255,255'
         outerAlpha={0.2}
         innerScale={0.7}
-        outerScale={5}
+        outerScale={2}
         outerStyle={{
           mixBlendMode: 'exclusion'
         }}  
@@ -24,13 +38,11 @@ const App = () => {
       <div className='App-Body'>
         <NavBar />
         <SideBar className="side-bar" />
-        <About/>
+        <Inventory/>
+        <Inventory/>
+        <Inventory/>
         
       </div>
-      <div className='content'>
-
-      </div>
-      
     </div>
 
   );

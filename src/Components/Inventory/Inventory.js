@@ -14,15 +14,7 @@ const Inventory = () =>{
     }
     return(
         <div className="inventory">
-            <div>.</div>
             <About/>
-            
-            <>
-            jjj
-            
-            
-            
-            </>
         </div>
         
 

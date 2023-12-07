@@ -23,7 +23,7 @@ const App = () => {
   }
   return (
     
-    <div className={`app ${isSnapped ? 'snap' : ''}`}>
+    <div className="app">
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
@@ -31,17 +31,16 @@ const App = () => {
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={2}
-        outerStyle={{
-          mixBlendMode: 'exclusion'
-        }}  
+        // outerStyle={{
+        //   mixBlendMode: 'exclusion'
+        // }}  
       />
       <div className='App-Body'>
         <NavBar />
         <SideBar className="side-bar" />
-        <Inventory/>
-        <Inventory/>
-        <Inventory/>
         
+        <Inventory/>
+
       </div>
     </div>
 

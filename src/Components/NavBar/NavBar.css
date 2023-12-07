@@ -1,4 +1,5 @@
 .navbar {
+    left: 15px;
     padding-top: 20px;
     position: fixed;
     /* width: 100%; */
@@ -15,7 +16,7 @@
 
     /* for navbar auto hide*/
     position: fixed;
-    top: 0;
+    /* top: 0; */
     width: 100%;
     /* padding: 10px; */
     background-color: transparent;
@@ -46,6 +47,7 @@
 }
 
 .navbar-item {
+    color: #686f85;
     background-blend-mode:hard-light;
     
     display: flex;
@@ -68,11 +70,12 @@
     background-color: transparent;
     /* color: #00ffe0; */
     color:#4c8ce6;
+
     border: 0px;
     /* animation-duration: 100ms; */
 }
 
-.navbar-item :hover{
+.navbar-item button:hover{
     /* animation-duration: 100ms; */
     animation-direction: reverse;
     text-decoration: overline 2px;

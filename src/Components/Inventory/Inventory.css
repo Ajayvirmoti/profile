@@ -2,7 +2,7 @@
   height: 100vh; /* Correct the typo: Change 100lv to 100vh */
   display:flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items:center; /* Center vertically */
   padding-left: 22%;
   padding-right: 22%;
@@ -12,8 +12,10 @@
 .inventory__arrow{
     color:#ccd6f6;
     display: flex;
+    align-items: center;
+    align-content: center;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
     /* align-items: center; */
     /* float: right; */
     /* float: inline-end; */

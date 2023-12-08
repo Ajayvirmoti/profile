@@ -1,0 +1,19 @@
+
+
+{
+    "data": [
+      {
+        "title": "Example Title 1",
+        "image": "path/to/image1.png"
+      },
+      {
+        "title": "Example Title 2",
+        "image": "path/to/image2.png"
+      },
+      {
+        "title": "Example Title 3",
+        "image": "path/to/image3.png"
+      }
+    ]
+  }
+  

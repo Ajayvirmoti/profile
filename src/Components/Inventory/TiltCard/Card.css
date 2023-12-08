@@ -1,0 +1,13 @@
+.card__icon{
+
+}
+
+.tilt__card{
+    height: 100px;
+    width: 100px;
+    background-color: #030509;
+    border: solid 1px #4c8ce6;
+    border-radius: 10px;
+    /* filter: blur(); */
+    backdrop-filter: blur(20px);
+}

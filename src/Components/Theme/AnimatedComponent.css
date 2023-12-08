@@ -1,0 +1,13 @@
+/* AnimatedComponent.css */
+.animated-container {
+    color: white;
+    opacity: 0;
+    transform: translateY(20px); /* Initial position off-screen */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  }
+  
+  .animated-container.animate {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+  }
+  

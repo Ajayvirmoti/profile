@@ -38,7 +38,6 @@ const App = () => {
       <div className='App-Body'>
         <NavBar />
         <SideBar className="side-bar" />
-        
         <Inventory/>
 
       </div>

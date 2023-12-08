@@ -1,23 +1,44 @@
 .inventory{
-  height: 100vh; /* Correct the typo: Change 100lv to 100vh */
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center; /* Center vertically */
+  /* Correct the typo: Change 100lv to 100vh */
+  /* display:flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items:center; Center vertically */
   padding-left: 22%;
   padding-right: 22%;
 }
 
 
-.inventory__arrow{
-    color:#ccd6f6;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
-    /* float: right; */
-    /* float: inline-end; */
-    font-size: 100px;
+.inventory__about{
+  height: 100vh; /* Correct the typo: Change 100lv to 100vh */
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center; /* Center vertically */
+}
+
+.pic{
+  width: 30opx;
+  height: 300px;
+}
+
+
+
+
+
+.tilt__card{
+  height: 100px;
+  width: 100px;
+  background-color: #030509;
+  border: solid 1px #4c8ce6;
+  border-radius: 10px;
+  /* filter: blur(); */
+  backdrop-filter: blur(20px);
+}
+
+
+.tilt__title{
+  color: white;
+  align-items: center;
+
 }

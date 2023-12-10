@@ -39,20 +39,21 @@
  
 .next-page__arrow{
     color:#4c8ce6;
-    animation: bouncing 2.5s infinite ease-in-out;
+    animation: bouncing 1.5s infinite ease-in-out;
     bottom: 0;
     display: block;
-    height: 50px;
+    height: 90px;
     left: 90%;
     margin-left: -25px;
     position: absolute;
-    width: 50px;
+    width: 90px;
     
 } 
 
 .arrow :hover{
     /* height: 60px/; */
-    height: 100px;
+    /* height: 100px; */
+    width: 90px;
     color: #ccd6f6;
     
 

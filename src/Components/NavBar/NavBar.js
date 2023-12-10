@@ -8,6 +8,7 @@ import { PiStackOverflowLogoThin } from "react-icons/pi";
 import { RiArchiveDrawerFill } from "react-icons/ri";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import React, { useState, useEffect } from 'react';
+import { motion } from "framer-motion";
 const NavBar = ({ theme, toggleTheme }) => {
     const [isVisible, setIsVisible] = useState(true);
     const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -57,8 +58,11 @@ const NavBar = ({ theme, toggleTheme }) => {
                 <button>Tech <PiStackOverflowLogoThin /></button>
                 <button>Archive </button>
                 <button>Tech </button>
-                <button className="navbar-resume-button">Resume <TfiDownload /></button>
-
+                <motion.button 
+                  whileHover={{scale:1.2}}
+                  whileTap={{scale:0.8}}
+                  onClick={()=> null}
+                  className="navbar-resume-button">Resume <TfiDownload /></motion.button>
             </div>
 
 

@@ -7,6 +7,7 @@ import { SlActionRedo } from "react-icons/sl";
 import AnimatedComponent from "../Theme/AnimatedComponent.js";
 import Tilt from 'react-parallax-tilt';
 import img from "./photo.jpg";
+import Skills from "./Skills/Skills/Skills.js";
 
 import  Card  from "./TiltCard/Card.js"
 const Inventory = () => {
@@ -16,9 +17,9 @@ const Inventory = () => {
         setNextPage(true);
     }
     return (
-        <div className="inventory">
+        <div className="inventory" id="About">
             <div className="inventory__about"><About /></div>
-            <Card/>
+            <Skills className="test"/>
            
         </div>
     );

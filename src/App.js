@@ -8,6 +8,8 @@ import Resume from "./Components/Resume/Resume.js";
 import AnimatedCursor from 'react-animated-cursor';
 import Inventory from './Components/Inventory/Inventory.js';
 import { SlArrowDown } from 'react-icons/sl';
+import { motion } from 'framer-motion';
+import { useScroll } from 'framer-motion';
 
 
 const App = () => {
@@ -21,9 +23,11 @@ const App = () => {
   const nextPageHandler = () =>{
 
   }
+  const { scrollYProgress } = useScroll();
   return (
     
     <div className="app">
+      
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
@@ -39,6 +43,7 @@ const App = () => {
         <NavBar />
         <SideBar className="side-bar" />
         <Inventory/>
+        
 
       </div>
     </div>

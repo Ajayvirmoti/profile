@@ -3,17 +3,21 @@ import React from "react";
 import Tilt from 'react-parallax-tilt';
 import { FaJava } from "react-icons/fa";
 import "./Card.css";
+import { motion } from "framer-motion";
 
-const Card =()=>{
+const Card =(props)=>{
+    const classes =  'card ' + props.className; 
+    // const classes = 'card' + props.className;
+    console.log(classes);
     return(
         <Tilt
             tiltEnable = {true}
-            className="tilt__card"
+            className={classes}
             tiltAngleXInitial={0}
             tiltAngleYInitial={0}
             glareEnable={true}
-        >
-            <FaJava className="card__icon"/>
+        >  {/* <FaJava className="card__icon"/> */}
+        {props.children}
         </Tilt>
 
     );

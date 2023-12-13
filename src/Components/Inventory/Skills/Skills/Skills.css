@@ -1,6 +1,7 @@
 /* Skills.css */
 .skill-container{
-  background-color: #05080f;
+  /* background-color: #05080f; */
+  /* opacity: 0.1; */
   padding: 2.6vmin;
   border-radius: 30px;
   padding-bottom: 5vmin;
@@ -14,6 +15,7 @@
 
 
 .skill-container__grid {
+  padding: 2vmin;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -24,12 +26,12 @@
   box-sizing: border-box;
   color: #4c8ce6;
   border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
+  padding: .5vmin;
   font-size: 20px;
   text-align: center;
   aspect-ratio: 3/2;
   margin-bottom: 20px; /* Adjust the margin as needed */
-  box-shadow: 0px 0px 20px #0b1a31;
+  box-shadow: 0px 0px 20px #040911;
 }
 
 .grid-item:hover{
@@ -39,7 +41,7 @@
 
 .grid-item__props {
   font-size: 3.6vmin;
-  filter: contrast(200%);
+  /* filter: contrast(200%); */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -47,3 +49,13 @@
   font-size: 1.4vmin;
   color: #686f85;
 }
+
+
+
+
+
+
+
+
+
+

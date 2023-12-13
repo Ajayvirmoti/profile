@@ -10,6 +10,8 @@ import { TbBrandTypescript } from "react-icons/tb";
 import { GoDatabase } from "react-icons/go";
 import { SiRedux } from "react-icons/si";
 import { PiStackOverflowLogoThin } from "react-icons/pi";
+import { FaLinux } from "react-icons/fa";
+import { SiArchlinux } from "react-icons/si";
 const skillsData = [
     { title: "ReactJs", icon: <FaReact /> },
     { title: "JavaScript", icon: <IoLogoJavascript /> },
@@ -20,12 +22,15 @@ const skillsData = [
     { title: "SQL", icon: <GoDatabase /> },
     { title: "Redux", icon: <SiRedux /> },
     { title: "TypeScript", icon: <TbBrandTypescript /> },
-    { title: "SQL", icon: <GoDatabase /> },
-    { title: "Redux", icon: <SiRedux /> },
-    { title: "TypeScript", icon: <TbBrandTypescript /> },
+    { title: "DSA", icon: <TbBrandTypescript /> },
+    { title: "Linux", icon: <SiArchlinux /> },
+    { title: "FireBase", icon: <TbBrandTypescript /> },
+    { title: "Networking", icon: <GoDatabase /> },
+    { title: "RestAPIs", icon: <SiRedux /> },
+    
+    
 
 ];
-
 const Skills = () => {
     return (
         <motion.div
@@ -34,8 +39,7 @@ const Skills = () => {
 
         >
             <div className="skil-container__title">
-                Skill <PiStackOverflowLogoThin/>
-
+                Skills <PiStackOverflowLogoThin/>
             </div>
             <div className="skill-container__grid">
                 {skillsData.map((skill, index) => (

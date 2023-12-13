@@ -8,20 +8,34 @@ import AnimatedComponent from "../Theme/AnimatedComponent.js";
 import Tilt from 'react-parallax-tilt';
 import img from "./photo.jpg";
 import Skills from "./Skills/Skills/Skills.js";
+import Projects from "./Projects/Projects.js";
 
-import  Card  from "./TiltCard/Card.js"
+import Card from "./TiltCard/Card.js"
+import { delay } from "framer-motion";
 const Inventory = () => {
-    const [isHome, setNextPage] = useState("True");
-
-    const nextPageHandler = () => {
-        setNextPage(true);
+    const [isHome, setNextPage] = useState(true);
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
+    const nextPageHandler = () => {
+        setNextPage(false);
+        sleep(2000).then(() => { console.log('World!'); });
+        window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
+    }
+    console.log(isHome);
+
+    const about = <div className="inventory__about"><About nextPage={nextPageHandler} /></div>;
     return (
-        <div className="inventory" id="About">
-            <div className="inventory__about"><About /></div>
-            <Skills className="test"/>
-           
-        </div>
+        <>
+            {
+                isHome ? (<div className="inventory">{about}</div>) : (
+                    <div className="inventory" id="About">
+                        {about}
+                        <Skills className="test" />
+                    </div>
+                )
+            }
+        </>
     );
 }
 

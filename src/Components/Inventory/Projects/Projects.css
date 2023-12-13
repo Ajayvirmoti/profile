@@ -1,0 +1,17 @@
+.book{
+    /* background-color: #05080f; */
+    padding: 10px;
+    border-radius: 20px;
+
+
+}
+.cover{
+    background-color: rgb(1, 26, 26);
+    display: flex;
+}
+
+.demoPage{
+    box-shadow: 0px 0px 20px black;
+    background-color: rgb(43, 58, 71);
+    color: rgb(0, 112, 211);
+}

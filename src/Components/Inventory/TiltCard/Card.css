@@ -1,9 +1,11 @@
 .card{
     /* height: 200px; */
     /* width: 200px; */
-    background-color: #030509;
+    /* background-color: #030509; */
     border: solid 1px #4c8ce6;
     border-radius: 10px;
-    filter: blur();
-    backdrop-filter: blur(20px);
+    /* background-color: transparent; */
+    position: relative;
+    /* filter: blur(); */
+    /* backdrop-filter: blur(20px); */
 }

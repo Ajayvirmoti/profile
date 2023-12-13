@@ -1,7 +1,7 @@
 .navbar {
     left: 15px;
     padding-top: 20px;
-    position: fixed;
+    position: absolute;
     /* width: 100%; */
     display:flex;
     /* padding: 20px; */
@@ -146,7 +146,7 @@
   .navbar.background {
     /* background-color: rgba(51, 51, 51, 0.8); */
     background-color: #0f1729 0.8;
-    /* backdrop-filter: blur(20px); */
+    backdrop-filter: blur(20px);
     /* Add your desired background color */
     /* Add any other background-related styles */
   }

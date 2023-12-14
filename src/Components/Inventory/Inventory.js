@@ -19,23 +19,32 @@ const Inventory = () => {
     }
     const nextPageHandler = () => {
         setNextPage(false);
-        sleep(2000).then(() => { console.log('World!'); });
-        window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
+        
+        sleep(200).then(() => { 
+            window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
+            
+            console.log('World!'); });
+        
     }
     console.log(isHome);
 
     const about = <div className="inventory__about"><About nextPage={nextPageHandler} /></div>;
     return (
-        <>
+        <>  <div className="inventory">{about}</div>
             {
-                isHome ? (<div className="inventory">{about}</div>) : (
-                    <div className="inventory" id="About">
-                        {about}
-                        <Skills className="test" />
-                    </div>
-                )
+                isHome ? <></> :
+                       <div className="inventory"> <Skills className="test" /></div>
+
             }
         </>
+        // <>
+        // <div ref={(ref) => setAboutRef(ref)}>
+        //     <About nextPage={null}/>
+        // </div>
+        // <div ref={(ref) => setAboutRef(ref)}>
+        //     <About nextPage={null}/>
+        // </div>
+        // </>
     );
 }
 

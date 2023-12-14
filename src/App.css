@@ -1,22 +1,35 @@
 /* App.css */
 
 .app {
-  background: rgb(15, 23, 42);
-  background: radial-gradient(
+  /* background: rgb(15, 23, 42); */
+  /* background: radial-gradient(
     circle,
     rgba(15, 23, 42, 1) 29%,
     rgba(0, 0, 0, 1) 100%,
     rgba(17, 41, 61, 1) 100%
-  );
+  ); */
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
 .about {
-  height: 100vh; /* Correct the typo: Change 100lv to 100vh */
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center; /* Center vertically */
-  padding-left: 22%;
-  padding-right: 22%;
+  /* z-index: 10; */
+  position: fixed;
+  /* height: 100vh;  */
+  /* display:flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items:center;  */
+  /* padding-left: 22%; */
+  /* padding-right: 22%; */
+}
+#tsparticles {
+  z-index: -20;
+  position:fixed;
+  /* height: 100%; */
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  z-index: -10;
 }

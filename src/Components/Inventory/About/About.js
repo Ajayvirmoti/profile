@@ -4,6 +4,7 @@ import { PiHandWavingThin } from "react-icons/pi";
 import { SlArrowDown } from "react-icons/sl";
 import { useInView } from 'react-intersection-observer';
 import { motion } from "framer-motion";
+import { FaLocationDot } from "react-icons/fa6";
 const About = ({ nextPage }) => {
     const [useArrow, setArrow] = useState(true);
     useEffect(() => {
@@ -44,6 +45,7 @@ const About = ({ nextPage }) => {
 
                 <h2 className="intro__tagline"> A Web Weaving Wizardry </h2>
                 <p className="intro__description">A passionate software developer with a mission to transform innovative ideas into robust and scalable digital solutions . With a keen eye for detail and a love for elegant code, I navigate the ever-evolving landscape of technology.</p>
+                <div className="location"><FaLocationDot/> INDIA </div>
             </div>
             {useArrow ? (<div className="arrow"><SlArrowDown className="next-page__arrow" onClick={arrowClickHandler} /></div>) : (<></>)}
         </motion.div>

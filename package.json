@@ -12,6 +12,7 @@
     "framer-motion": "^10.16.16",
     "page-flip": "^2.0.7",
     "react": "^18.2.0",
+    "react-animate-on-scroll": "^2.1.7",
     "react-animated-cursor": "^2.11.2",
     "react-bootstrap": "^2.9.1",
     "react-dom": "^18.2.0",
@@ -56,5 +57,9 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.0"
-  }
+  },
+  "description": "Just a web version of my resume made using reactjs",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
 }

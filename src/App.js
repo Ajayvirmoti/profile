@@ -8,12 +8,12 @@ import Resume from "./Components/Resume/Resume.js";
 import AnimatedCursor from 'react-animated-cursor';
 import Inventory from './Components/Inventory/Inventory.js';
 import { SlArrowDown } from 'react-icons/sl';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import { useScroll } from 'framer-motion';
 import Particles, {initParticlesEngine} from "@tsparticles/react";
 import {loadFull} from "tsparticles";
 import particlesOptions from "./particles.json";
-
+import ScrollAnimation from 'react-animate-on-scroll';
 const App = () => {
   //Particle 
   const [init, setInit] = useState(false);
@@ -52,13 +52,14 @@ const App = () => {
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
+        // color='60,90,255'
         color='255,255,255'
-        outerAlpha={0.2}
-        innerScale={0.7}
+        outerAlpha={0.1}
+        innerScale={2}
         outerScale={2}
-        // outerStyle={{
-        //   mixBlendMode: 'exclusion'
-        // }}  
+        outerStyle={{
+          mixBlendMode: 'exclusion'
+        }}  
       />
       <div className='App-Body'>
         <NavBar />
@@ -69,5 +70,4 @@ const App = () => {
 
   );
 };
-
 export default App;

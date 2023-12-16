@@ -49,7 +49,7 @@ const App = () => {
     <div className="app">
       {init && <Particles options={particlesOptions}/>}
       
-      <AnimatedCursor
+      {/* <AnimatedCursor
         innerSize={8}
         outerSize={35}
         // color='60,90,255'
@@ -60,10 +60,10 @@ const App = () => {
         outerStyle={{
           mixBlendMode: 'exclusion'
         }}  
-      />
+      /> */}
       <div className='App-Body'>
         <NavBar />
-        <SideBar className="side-bar" />
+        {/* <SideBar className="side-bar" /> */}
         <Inventory className="about"/>
       </div>
     </div>

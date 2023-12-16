@@ -7,13 +7,13 @@ import { SlActionRedo } from "react-icons/sl";
 import AnimatedComponent from "../Theme/AnimatedComponent.js";
 import Tilt from 'react-parallax-tilt';
 import img from "./photo.jpg";
-import Skills from "./Skills/Skills/Skills.js";
+import Skills from "./Skills/Skills.js";
 import Projects from "./Projects/Projects.js";
 
 import Card from "./TiltCard/Card.js"
 import { delay } from "framer-motion";
 const Inventory = () => {
-    const [isHome, setNextPage] = useState(true);
+    const [isHome, setNextPage] = useState(false);
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
@@ -37,14 +37,6 @@ const Inventory = () => {
 
             }
         </>
-        // <>
-        // <div ref={(ref) => setAboutRef(ref)}>
-        //     <About nextPage={null}/>
-        // </div>
-        // <div ref={(ref) => setAboutRef(ref)}>
-        //     <About nextPage={null}/>
-        // </div>
-        // </>
     );
 }
 

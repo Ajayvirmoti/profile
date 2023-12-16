@@ -1,0 +1,83 @@
+{
+    "skillsData": [
+        {
+            "skill": {
+                "title": "FrontEnd",
+                "skills": [
+                    {
+                        "name": "HTML"
+                    },
+                    {
+                        "name": "CSS"
+                    },
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name": "TypeScript"
+                    },
+                    {
+                        "name": "ReactJs"
+                    },
+                    {
+                        "name": "Tailwind"
+                    },
+                    {
+                        "name": "Redux"
+                    }
+                ]
+            }
+        },
+        {
+            "skill": {
+                "title": "Backend",
+                "skills": [
+                    {
+                        "name": "Nodejs"
+                    },
+                    {
+                        "name": "Expressjs"
+                    }
+                ]
+            }
+        },
+        {
+            "skill":{
+                "title": "Database",
+                "skills": [
+                    {
+                        "name": "MySql"
+                    },
+                    {
+                        "name": "MongoDB"
+                    },
+                    {
+                        "name": "Firebase"
+                    }
+                ]
+            }
+        },
+        {
+            "skill": {
+                "title": "Others",
+                "skills": [
+                    {
+                        "name": "Java"
+                    },
+                    {
+                        "name": "DSA"
+                    },
+                    {
+                        "name": "Git"
+                    },
+                    {
+                        "name": "Linux"
+                    },
+                    {
+                        "name": "RESTful APIs"
+                    }
+                ]
+            }
+        }
+    ]
+}

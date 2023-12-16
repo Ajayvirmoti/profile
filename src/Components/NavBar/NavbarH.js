@@ -1,5 +1,10 @@
 import React from "react"
+import Card from "../Inventory/TiltCard/Card"
 
-const react =() =>{
-    
+const NavbarH = () => {
+  return (
+    <div className="">
+       <Card />
+    </div>
+  )
 }

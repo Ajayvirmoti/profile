@@ -1,45 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .About{
-    padding-left: 5%;
-    padding-right: 5%;
+    display: flex;
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    align-items: center;
    
 
 }  
 
-.About__{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-
-}
 .intro{
+    /* width: fit-content; */
     display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
     /* padding-top: 10px; */
 
 }
-.intro__{
+.intro__greeting{
+    width: 75%;
+    color:#ccd6f6;
     padding-top: 40px;
     /* width: 100px; */
     /* width: 20%; */
     margin-top: 0px;
     margin-bottom: 0px;
-    color:#4c8ce6;
-      font-family: "Montserrat',sans-serif";
+    /* color:#4c8ce6; */
+      /* font-family: "Montserrat',sans-serif"; */
+      font-family: Helvetica, sans-serif;
     /* font-family: 'Poppins', sans-serif; */
 }
 
 .intro__name{
+    width: max-content;
     opacity: 1;
     font-family: "Montserrat',sans-serif";
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size:5vmin;
+    font-size:5%;
     color:#4c8ce6;
-    /* color:transparent black !important; */
+    font-size: 300%;
 }
 
 .intro__tagline{
+    /* line-gap-override: 2px; */
+
+    width: 75%;
+    /* text-align: justify; */
     margin: 0px;
     font-size: 400%;
     color:#686f85;
@@ -47,13 +55,13 @@
 }
 
 .intro__description{
+    text-align: justify;
     width: 75%;
     color: #ccd6f6;
     /* opacity: .7; */
     font-family:'Poppins', sans-serif;
    
 }
- 
 .next-page__arrow{
     color:#4c8ce6;
     animation: bouncing 1.5s infinite ease-in-out;
@@ -68,8 +76,6 @@
 } 
 
 .arrow :hover{
-    /* height: 60px/; */
-    /* height: 100px; */
     width: 90px;
     color: #ccd6f6;
     
@@ -84,9 +90,115 @@
 
 .location {
     color: #ccd6f6;
+    width: fit-content;
 }
 
 .About__sticker{
     /* filter: invert(); */
+    /* width according to neighber div */
+    /* width: 20vmax; */
+    /* size: 20px; */
+    /* aspect-ratio: 1/.5; */
+    height: 350px;
+    /* height: min-content; */
     filter: contrast(90%) brightness(30%);
+}
+.container__logo{
+    margin-top: 50px;.About__sticker{
+        /* filter: invert(); */
+        /* width according to neighber div */
+        width: 25vmax;
+        filter: contrast(90%) brightness(30%);
+    }
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;    
+    color: #4c8ce6;
+}
+
+/* logo in on row  with padding and hover*/
+.intro__logo {
+    font-size: 3vmin;
+    align-items: center;
+    font-weight:900;
+    position: relative;
+}
+
+.intro__logo:hover{
+    color: #ccd6f6;
+    animation-duration: 200ms;
+    transition: 500ms;
+    transform: scale(1.5);
+}
+
+/* responsiveness for dive About */
+@media (max-width: 768px) {
+    .About__sticker {
+      display: none;
+    }
+    .About{
+        
+        margin-top: 10%;
+        width: fit-content;
+        align-items: center;
+        align-content: center;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 10%; */
+    }
+    .intro__name{
+        letter-spacing: 3px;
+        padding-top: 2%;
+        font-size: 10vmin;
+    }
+    .intro__tagline{
+        font-size: 12vmin;
+        word-spacing: 5px;
+        /* letter-spacing: 2px; */
+    }
+
+    .temp_about{
+        width: min-content;
+        /* display: none; */
+        width: fit-content;
+    }
+}
+
+@media (max-height: 794px) {
+    .About__sticker {
+      display: none;
+    }
+    .About{
+        
+        margin-top: 10%;
+        width: fit-content;
+        align-items: center;
+        align-content: center;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* width: 10%; */
+    }
+    .intro__name{
+        letter-spacing: 3px;
+        padding-top: 2%;
+        font-size: 10vmin;
+    }
+    .intro__tagline{
+        font-size: 12vmin;
+        word-spacing: 5px;
+        /* letter-spacing: 2px; */
+    }
+
+    .temp_about{
+        width: min-content;
+        /* display: none; */
+        width: fit-content;
+    }
 }

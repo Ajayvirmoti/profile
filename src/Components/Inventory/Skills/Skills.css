@@ -1,0 +1,104 @@
+.skill-container{
+  /* background-color: #05080f; */
+  /* opacity: 0.1; */
+  display: flex;
+  justify-content: space-between;
+  /* padding-bottom: 40px; */
+}
+.skills__Card{
+  background-color: rgb(0, 3, 14);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color:#4c8ce6 ;
+  padding: 10px;
+  /* padding-bottom: 70px; */
+
+  
+  
+  margin: 10px;
+  color: black;
+}
+.skills__title{
+  color: aliceblue;
+  font-size: 60%;
+  padding-left: 2px;
+}
+
+.skill_grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 calc(33.33% - 20px);
+  background: transparent;
+}
+.skill_name{
+  color: antiquewhite;
+  background-color: #686f85;
+  padding: 5px;
+  border-color: #686f85;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  margin: 3px;
+}
+
+/* .skil-container__title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5vmin;
+  color: #4c8ce6;
+  padding: 10px;
+} */
+
+
+/* .skill-container__grid {
+  padding: 2vmin;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: transparent;
+} */
+/* .card-style {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  color: black;
+} */
+
+/* .grid-item {
+  flex: 0 0 calc(10% - 10px); 
+  box-sizing: border-box;
+  color: #4c8ce6;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: .5vmin;
+  font-size: 20px;
+  text-align: center;
+  aspect-ratio: 3/2;
+  margin-bottom: 20px; 
+  box-shadow: 0px 0px 20px #040911;
+} */
+
+/* .grid-item:hover{
+  box-shadow: 0px 0px 10px #4c8ce6;
+} */
+
+
+/* .grid-item__props {
+  font-size: 3.6vmin;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.grid-item__props p {
+  font-size: 1.4vmin;
+  color: #686f85;
+}
+
+ */
+
+
+
+
+
+
+
+

@@ -6,10 +6,17 @@ import { useInView } from 'react-intersection-observer';
 import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import ScrollAnimation from "react-animate-on-scroll";
-// import "src/img/penguin-1152058_640.png";
+import { PiGithubLogoFill } from "react-icons/pi";
+import { CiLinkedin } from "react-icons/ci";
+import { LuLinkedin } from "react-icons/lu";
+import { RiLinkedinLine } from "react-icons/ri";
+import { RiInstagramFill } from "react-icons/ri";
+import { SiLeetcode } from "react-icons/si";
+import { FaSquareXTwitter } from "react-icons/fa6";
 import img from "./giphy1.gif";
 const About = ({ nextPage }) => {
     const [useArrow, setArrow] = useState(true);
+    // Handel window scroll  
     useEffect(() => {
         const handleScroll = () => {
             setArrow(window.scrollY === 0);
@@ -21,6 +28,8 @@ const About = ({ nextPage }) => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    // Handel window scroll
     const name = "<AjaySingh/>"
     const arrowClickHandler = () => {
         setArrow(false);
@@ -31,21 +40,30 @@ const About = ({ nextPage }) => {
         // ref.current?.scrollIntoView({ behavior: 'smooth' });
 
     }
+
     return (
         <div className="About">
             <div className="intro">
-                <div>
-                    <h4 className="intro__"> Hello <PiHandWavingThin />, Thank you visiting, </h4>
-                    <h1 className="intro__name"> {name}</h1>
+                <h4 className="intro__greeting"> Hello,<PiHandWavingThin/> Thank you visiting, I am </h4>
+                <h1 className="intro__name"> {name}</h1>
 
-                    <h2 className="intro__tagline"> A Web Weaving Wizardry </h2>
+                <h2 className="intro__tagline"> A Web Weaving Wizardry </h2>
 
-                    <p className="intro__description">A passionate software developer with a mission to transform innovative ideas into robust and scalable digital solutions . With a keen eye for detail and a love for elegant code, I navigate the ever-evolving landscape of technology.</p>
-                    <div className="location"><FaLocationDot /> INDIA </div>
+                <p className="intro__description">A passionate software developer with a mission to transform innovative ideas into robust and scalable digital solutions . With a keen eye for detail and a love for elegant code, I navigate the ever-evolving landscape of technology.</p>
+                <div className="location"><FaLocationDot /> INDIA </div>
+                <div className="container__logo">
+                    {/* map all logos in one row  */}
+                    <div className="intro__logo"><PiGithubLogoFill /></div>
+                    <div className="intro__logo"><RiLinkedinLine /></div>
+                    <div className="intro__logo"><SiLeetcode /></div>
+                    <div className="intro__logo"><RiInstagramFill /></div>
+                    <div className="intro__logo"><FaSquareXTwitter /></div>
                 </div>
-                <img src={img} className="About__sticker"/>
-
             </div>
+            <img src={img} className="About__sticker" />
+            {/* adding card for skills, total three cards   */}
+
+
             {useArrow ? (<div className="arrow"><SlArrowDown className="next-page__arrow" onClick={arrowClickHandler} /></div>) : (<></>)}
         </div>
     );

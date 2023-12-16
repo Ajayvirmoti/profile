@@ -21,6 +21,7 @@
     "react-loader-spinner": "^5.4.5",
     "react-pageflip": "^2.0.3",
     "react-parallax-tilt": "^1.7.175",
+    "react-reveal": "^1.2.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "react-spinners": "^0.13.8",

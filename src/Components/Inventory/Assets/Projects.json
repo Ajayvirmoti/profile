@@ -1,0 +1,97 @@
+{
+    "ProjectsData": [
+        {
+            "project": {
+                "title": "Profile",
+                "logo" : "../Assets/img/nex.gif",
+                "tech": [
+                    {
+                        "name":"ReactJs"
+                    },
+                    {
+                        "name": "Nodejs"
+                    },
+                    {
+                        "name": "CSS"
+                    }
+                ]
+            }
+        },
+        {
+            "project": {
+                "title": "Nex",
+                "logo" : "../Assets/img/nex.gif",
+                "tech": [
+                    {
+                        "name":"ReactJs"
+                    },
+                    {
+                        "name": "Nodejs"
+                    },
+                    {
+                        "name": "Expressjs"
+                    }
+                ]
+            }
+        },
+        {
+            
+            "project": {
+                "title": "Quizz Application",
+                "logo" : "../Assets/img/nex.gif",
+                "tech": [
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name": "ReactJs"
+                    },
+                    {
+                        "name": "Firebase"
+                    }
+                ]
+            }
+        },
+        {
+            "project":{
+                "title": "Hyprland Rice",
+                "logo" : "../Assets/img/nex.gif",
+                "tech": [
+                    {
+                        "name": "Arch"
+                    },
+                    {
+                        "name": "Shell"
+                    },
+                    {
+                        "name": "SDDM"
+                    },
+                    {
+                        "name":"swww"
+                    }
+                ]
+            }
+        },
+        {
+            "project": {
+                "title": "Charitable",
+                "logo" : "../Assets/img/nex.gif",
+                "tech": [
+                    {
+                        "name": "HTML"
+                    },
+                    {
+                        "name": "CSS"
+                    },
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name":"Firebase"
+                    }
+
+                ]
+            }
+        }
+    ]
+}

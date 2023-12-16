@@ -99,17 +99,18 @@
     /* width: 20vmax; */
     /* size: 20px; */
     /* aspect-ratio: 1/.5; */
-    height: 350px;
+    /* height: 10px; */
     /* height: min-content; */
     filter: contrast(90%) brightness(30%);
 }
+.About__sticker{
+    /* filter: invert(); */
+    /* width according to neighber div */
+    /* width: 25vmax;
+    filter: contrast(90%) brightness(30%); */
+}
 .container__logo{
-    margin-top: 50px;.About__sticker{
-        /* filter: invert(); */
-        /* width according to neighber div */
-        width: 25vmax;
-        filter: contrast(90%) brightness(30%);
-    }
+    margin-top: 50px;
     width: 200px;
     display: flex;
     justify-content: space-between;

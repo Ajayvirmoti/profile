@@ -14,6 +14,7 @@ import Particles, {initParticlesEngine} from "@tsparticles/react";
 import {loadFull} from "tsparticles";
 import particlesOptions from "./particles.json";
 import ScrollAnimation from 'react-animate-on-scroll';
+import Jello from 'react-reveal/Jello';
 const App = () => {
   //Particle 
   const [init, setInit] = useState(false);
@@ -49,7 +50,7 @@ const App = () => {
     <div className="app">
       {init && <Particles options={particlesOptions}/>}
       
-      {/* <AnimatedCursor
+      <AnimatedCursor
         innerSize={8}
         outerSize={35}
         // color='60,90,255'
@@ -60,7 +61,7 @@ const App = () => {
         outerStyle={{
           mixBlendMode: 'exclusion'
         }}  
-      /> */}
+      />
       <div className='App-Body'>
         <NavBar />
         {/* <SideBar className="side-bar" /> */}

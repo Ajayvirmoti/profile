@@ -9,6 +9,8 @@ import { GoDatabase } from "react-icons/go";
 import { SiRedux, SiArchlinux } from "react-icons/si";
 import { PiStackOverflowLogoThin } from "react-icons/pi";
 import skillsData from "../Assets/Skill_Set.json";
+import Jello from 'react-reveal/Jello';
+import RubberBand from 'react-reveal/RubberBand';
 // const skillsData = [
 //     { title: "ReactJs", icon: <FaReact /> },
 //     { title: "JavaScript", icon: <IoLogoJavascript /> },
@@ -29,94 +31,33 @@ import skillsData from "../Assets/Skill_Set.json";
 // ];
 console.log(skillsData);
 const Skills = () => {
-
-    // console.log(skillsData.FrontEnd.title);
-    // console.log(skillsData);
     return (
-        // <motion.div
-        //     className="skill-container"
-        //     id="Skills"
-
-        // >
-        //     <div className="skil-container__title">
-        //         Skills <PiStackOverflowLogoThin/>
-        //     </div>
-        // <div className="skill-container__grid">
-        //     {skillsData.map((skill, index) => (
-        //         <Card key={index} className="grid-item">
-        //             <div className="grid-item__props">
-        //                 {skill.icon}
-        //                 <p>{skill.title}</p>
-        //             </div>
-        //         </Card>
-        //     ))}
-        //     </div>
-        // </motion.div>
-
-
-
         <div className="skill-container">
-            {/* <div className="skills__Card">
-                <div className="skills__title">
-                    <h1>{skillsData.FrontEnd.title}</h1>
-                </div>
-                <div className="skill_grid">
-                    {skillsData.FrontEnd.skills.map((skill, index) => (
-                        // console.log(skill.name)
-                        <div className="skill_name">
-                            {skill.name}
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className="skills__Card">
-                <div className="skills__title">
-                    <h1>{skillsData.Backend.title}</h1>
-                </div>
-                <div className="skill_grid">
-                   
-                    {skillsData.Backend.skills.map((skill, index) => (
-                        // console.log(skill.name)
-                        <div className="skill_name">
-                            {skill.name}
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className="skills__Card">
-                <div className="skills__title">
-                    <h1>Front End</h1>
-                </div>
-                <div className="skill_grid">
-                    
-                    {skillsData.Others.skills.map((skill, index) => (
-                        // console.log(skill.name)
-                        <div className="skill_name">
-                            {skill.name}
-                        </div>
-                    ))}
-                </div>
-            </div> */}
-            {/* {console.log(skillsData.skillsData)} */}
+            <RubberBand>
+            <h1 className="skill-container__title">What I Know</h1>
+            </RubberBand>
+            <div className="skill-container__Cards">
             {skillsData.skillsData.map((skillType) => (
-                <div className="skills__Card">
-                     {console.log(skillType)}
-                    <div className="skills__title">
-                        <h1>{skillType.skill.title}</h1>
-                    </div>
-                    <div className="skill_grid">
+                <Jello>
+                    <div className="skills__Card">
+                        {/* {console.log(skillType)} */}
+                        <div className="skills__title">
+                            <h1>{skillType.skill.title}</h1>
+                        </div>
+                        <div className="skill_grid">
 
-                        {skillType.skill.skills.map((skill, index) => (
-                            
-                            <div className="skill_name">
-                                {skill.name}
-                            </div>
-                        ))}
+                            {skillType.skill.skills.map((skill, index) => (
+
+                                <div className="skill_name">
+                                    {skill.name}
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
+                </Jello>
             ))}
         </div>
-
+        </div>
     );
 };
 

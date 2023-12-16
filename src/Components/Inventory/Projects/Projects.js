@@ -1,37 +1,35 @@
 import React from "react";
-import HTMLFlipBook from "react-pageflip";
 import "./Projects.css";
-import PageCover from "./PageCover";
+import Data from "../Assets/Projects.json";
+import Card from "../TiltCard/Card";
+import { FaProjectDiagram } from "react-icons/fa";
+import { PiGithubLogoFill } from "react-icons/pi";
+import img from "../Assets/img/nex.gif"
+
 const Projects = () => {
-
     return (
-        <div className="cover">
-            jhjjerkwljfhrjnmvnjjkcmnvhj bjck
-            <HTMLFlipBook
-                width={550}
-                height={733}
-                size="stretch"
-                minWidth={315}
-                maxWidth={1000}
-                minHeight={400}
-                maxHeight={1533}
-                maxShadowOpacity={0.5}
-                showCover={true}
-                mobileScrollSupport={true}
+        <div className="projects">
+            {Data.ProjectsData.map((data) => (
+                <Card className="project__card">
+                    <header className="project__card__header">
+                        <div className="header-icon"><FaProjectDiagram /></div>
+                        <div className="header-icon"><PiGithubLogoFill /></div>
+                    </header>
+                    
+                    <img src={require("..Assets/img/nex.gif")}/>
+                    {/* {console.log(data.project.tech)} */}
+                    <div className="project-tech">
+                        {data.project.tech.map((tech) => (
+                            <div className="project-tech__name">{tech.name}</div>
+                        ))}
+                    </div>
+                </Card>
+            ))}
 
-                className="demo-book"
-            >
-                <PageCover>BOOK TITLE</PageCover>
-                <div className="demoPage">
-                </div>
-                <div className="demoPage">Page 2</div>
-                <div className="demoPage">Page 3</div>
-                <div className="demoPage">Page 4</div>
-            </HTMLFlipBook>
         </div>
 
 
-    )
+    );
 }
 
 export default Projects;

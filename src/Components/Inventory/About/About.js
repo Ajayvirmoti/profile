@@ -14,6 +14,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import img from "./giphy1.gif";
+import Pulse from 'react-reveal/Pulse';
 const About = ({ nextPage }) => {
     const [useArrow, setArrow] = useState(true);
     // Handel window scroll  
@@ -43,23 +44,25 @@ const About = ({ nextPage }) => {
 
     return (
         <div className="About">
-            <div className="intro">
-                <h4 className="intro__greeting"> Hello,<PiHandWavingThin/> Thank you visiting, I am </h4>
-                <h1 className="intro__name"> {name}</h1>
+            <Pulse>
+                <div className="intro">
+                    <h4 className="intro__greeting"> Hello,<PiHandWavingThin /> Thank you visiting, I am </h4>
+                    <h1 className="intro__name"> {name}</h1>
 
-                <h2 className="intro__tagline"> A Web Weaving Wizardry </h2>
+                    <h2 className="intro__tagline"> A Web Weaving Wizardry </h2>
 
-                <p className="intro__description">A passionate software developer with a mission to transform innovative ideas into robust and scalable digital solutions . With a keen eye for detail and a love for elegant code, I navigate the ever-evolving landscape of technology.</p>
-                <div className="location"><FaLocationDot /> INDIA </div>
-                <div className="container__logo">
-                    {/* map all logos in one row  */}
-                    <div className="intro__logo"><PiGithubLogoFill /></div>
-                    <div className="intro__logo"><RiLinkedinLine /></div>
-                    <div className="intro__logo"><SiLeetcode /></div>
-                    <div className="intro__logo"><RiInstagramFill /></div>
-                    <div className="intro__logo"><FaSquareXTwitter /></div>
+                    <p className="intro__description">A passionate software developer with a mission to transform innovative ideas into robust and scalable digital solutions . With a keen eye for detail and a love for elegant code, I navigate the ever-evolving landscape of technology.</p>
+                    <div className="location"><FaLocationDot /> INDIA </div>
+                    <div className="container__logo">
+                        {/* map all logos in one row  */}
+                        <div className="intro__logo"><PiGithubLogoFill /></div>
+                        <div className="intro__logo"><RiLinkedinLine /></div>
+                        <div className="intro__logo"><SiLeetcode /></div>
+                        <div className="intro__logo"><RiInstagramFill /></div>
+                        <div className="intro__logo"><FaSquareXTwitter /></div>
+                    </div>
                 </div>
-            </div>
+            </Pulse>
             <img src={img} className="About__sticker" />
             {/* adding card for skills, total three cards   */}
 

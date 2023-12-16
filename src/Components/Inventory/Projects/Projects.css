@@ -1,17 +1,49 @@
-.book{
-    /* background-color: #05080f; */
+.projects {
     padding: 10px;
-    border-radius: 20px;
-
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+    row-gap: 8rem;
+    overflow: hidden;
+    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%)); */
+    /* padding: 20px; */
 }
-.cover{
-    background-color: rgb(1, 26, 26);
+
+.project__card__header {
+    color: aliceblue;
     display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    color: var(--blue);
+    margin-bottom: 3.6rem;
+}
+.header-icon{
+    color: aliceblue;
 }
 
-.demoPage{
-    box-shadow: 0px 0px 20px black;
-    background-color: rgb(43, 58, 71);
-    color: rgb(0, 112, 211);
+.project__card {
+    padding: 2rem 1.8rem;
+    background-color: rgb(43, 43, 43);
+    border-radius: 1.2rem;
+    transition: all 0.25s ease 0s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%));
+
+
+}
+
+.project-tech {
+    display: flex;
+
+}
+
+.project-tech__name {
+    padding: 5px;
+    color: aliceblue;
 }

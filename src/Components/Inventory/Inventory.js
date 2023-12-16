@@ -33,7 +33,13 @@ const Inventory = () => {
         <>  <div className="inventory">{about}</div>
             {
                 isHome ? <></> :
-                       <div className="inventory"> <Skills className="test" /></div>
+                       <>
+                        <div className="inventory"> <Skills className="test" /></div>
+                        <div className="inventory"><Projects/></div>
+                       
+                       
+                       
+                       </>
 
             }
         </>

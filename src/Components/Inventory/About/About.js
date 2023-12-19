@@ -46,7 +46,7 @@ const About = ({ nextPage }) => {
         <div className="About">
             <Pulse>
                 <div className="intro">
-                    <h4 className="intro__greeting"> Hello,<PiHandWavingThin /> Thank you visiting, I am </h4>
+                    <h4 className="intro__greeting">' ' Hello,<PiHandWavingThin /> Thank you visiting, I am </h4>
                     <h1 className="intro__name"> {name}</h1>
 
                     <h2 className="intro__tagline"> A Web Weaving Wizardry </h2>
@@ -56,9 +56,13 @@ const About = ({ nextPage }) => {
                     <div className="container__logo">
                         {/* map all logos in one row  */}
                         <div className="intro__logo"><PiGithubLogoFill /></div>
+                        <hr/>
                         <div className="intro__logo"><RiLinkedinLine /></div>
+                        <hr/>
                         <div className="intro__logo"><SiLeetcode /></div>
+                        <hr/>
                         <div className="intro__logo"><RiInstagramFill /></div>
+                        <hr/>
                         <div className="intro__logo"><FaSquareXTwitter /></div>
                     </div>
                 </div>

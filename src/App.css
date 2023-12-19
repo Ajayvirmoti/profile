@@ -1,17 +1,6 @@
 /* App.css */
 
-.app {
-  /* width: 100%; */
-  /* background: rgb(15, 23, 42); */
-  /* background: radial-gradient(
-    circle,
-    rgba(15, 23, 42, 1) 29%,
-    rgba(0, 0, 0, 1) 100%,
-    rgba(17, 41, 61, 1) 100%
-  ); */
-  /* opacity: 1; */
-  /* transition: opacity 0.5s ease-in-out; */
-}
+
 #tsparticles {
   z-index: -20;
   position:fixed;

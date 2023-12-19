@@ -1,13 +1,7 @@
 .inventory{
-  /* Correct the typo: Change 100lv to 100vh */
-  /* display:flex; */
-  /* flex-direction: column; */
-  /* justify-content: center; */
-  /* align-items:center; Center vertically */
   margin-left: 5%;
   margin-right: 5%;
   height: fit-content;
-  
 }
 
 
@@ -17,17 +11,15 @@
   flex-direction: column;
   justify-content: center;
   width: fit-content;
-  align-items:center; 
+  align-items:center;
+
 }
+
 
 .pic{
   width: 30px;
   height: 400px;
 }
-
-
-
-
 
 .tilt__card{
   height: 100px;

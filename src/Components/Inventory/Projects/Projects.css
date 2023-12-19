@@ -1,11 +1,26 @@
-.projects {
-    padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.projects{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.project__title{
+    font-size: 3rem;
+    margin-top: 5rem;
+    color:#686f85;
+    margin-bottom: 5rem;
+}
+
+.projects__grid {
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     gap: 2rem;
     row-gap: 8rem;
     overflow: hidden;
+    
     /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%)); */
     /* padding: 20px; */
 }

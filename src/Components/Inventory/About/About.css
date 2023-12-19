@@ -38,9 +38,9 @@
     font-family: "Montserrat',sans-serif";
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size:5%;
+    /* font-size:100%; */
     color:#4c8ce6;
-    font-size: 300%;
+    font-size: 500%;
 }
 
 .intro__tagline{
@@ -49,7 +49,7 @@
     width: 75%;
     /* text-align: justify; */
     margin: 0px;
-    font-size: 400%;
+    font-size: 500%;
     color:#686f85;
     font-family: 'Poppins', sans-serif;
 }
@@ -60,6 +60,7 @@
     color: #ccd6f6;
     /* opacity: .7; */
     font-family:'Poppins', sans-serif;
+    font-size: 120%;
    
 }
 .next-page__arrow{
@@ -116,6 +117,7 @@
     justify-content: space-between;
     flex-direction: row;    
     color: #4c8ce6;
+    /* padding: 10px; */
 }
 
 /* logo in on row  with padding and hover*/
@@ -124,6 +126,7 @@
     align-items: center;
     font-weight:900;
     position: relative;
+    padding: 5px;
 }
 
 .intro__logo:hover{

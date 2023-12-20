@@ -3,7 +3,7 @@
         {
             "project": {
                 "title": "Profile",
-                "logo" : "../Assets/img/nex.gif",
+                "logo" : "profileBanner.png",
                 "tech": [
                     {
                         "name":"ReactJs"
@@ -20,7 +20,7 @@
         {
             "project": {
                 "title": "Nex",
-                "logo" : "../Assets/img/nex.gif",
+                "logo" : "nex.gif",
                 "tech": [
                     {
                         "name":"ReactJs"
@@ -38,7 +38,7 @@
             
             "project": {
                 "title": "Quizz Application",
-                "logo" : "../Assets/img/nex.gif",
+                "logo" : "quizzBanner.png",
                 "tech": [
                     {
                         "name": "JavaScript"
@@ -55,7 +55,7 @@
         {
             "project":{
                 "title": "Hyprland Rice",
-                "logo" : "../Assets/img/nex.gif",
+                "logo" : "hyprBanner.jpg",
                 "tech": [
                     {
                         "name": "Arch"
@@ -75,7 +75,7 @@
         {
             "project": {
                 "title": "Charitable",
-                "logo" : "../Assets/img/nex.gif",
+                "logo" : "charitableBanner.jpg",
                 "tech": [
                     {
                         "name": "HTML"

@@ -42,6 +42,22 @@ const About = ({ nextPage }) => {
 
     }
 
+
+
+    const clickHandler_git = () =>{
+        window.open("https://github.com/Ajayvirmoti/")
+    }  
+    const clickHandler_lc = () =>{
+        window.open("https://leetcode.com/ajayvirmoti_personal/")   
+    }
+    const clickHandler_ln = () =>{
+        window.open("https://www.linkedin.com/in/ajay-virmoti-21ab931b2/")
+    }
+    const clickHandler_insta = () =>{
+        window.open("https://www.instagram.com/ajayvirmoti/")
+        
+    }
+
     return (
         <div className="About">
             <Pulse>
@@ -55,9 +71,9 @@ const About = ({ nextPage }) => {
                     <div className="location"><FaLocationDot /> INDIA </div>
                     <div className="container__logo">
                         {/* map all logos in one row  */}
-                        <div className="intro__logo"><PiGithubLogoFill /></div>
+                        <div className="intro__logo"><PiGithubLogoFill onClick={clickHandler_git}/></div>
                         <hr/>
-                        <div className="intro__logo"><RiLinkedinLine /></div>
+                        <div className="intro__logo"><RiLinkedinLine onClick={clickHandler_ln}/></div>
                         <hr/>
                         <div className="intro__logo"><SiLeetcode /></div>
                         <hr/>

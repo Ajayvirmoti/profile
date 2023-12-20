@@ -1,28 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 .projects{
+    /* padding: 50px; */
+    padding-bottom: 10rem;
+    scroll-behavior: smooth;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    animation-duration: 10000ms;
+    /* transition: 10000ms; */
 }
 
-.project__title{
+.projects__title{
+
     font-size: 3rem;
     margin-top: 5rem;
     color:#686f85;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
+}
+
+
+.scroll-animation{
+    /* animation-duration: 1000ms; */
+    transition: 500ms;
 }
 
 .projects__grid {
+    height: fit-content;
     padding: 20px;
     display: grid;
+    /* display: flex; */
+    /* flex-direction: column; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
+    /* grid-template-columns: auto; */
     gap: 2rem;
     row-gap: 8rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     
     /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%)); */
     /* padding: 20px; */
+}
+.project__card {
+    padding: 2rem 1.8rem;
+    background-color: rgb(43, 43, 43);
+    border-radius: 1.2rem;
+    transition: all 0.25s ease 0s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%));
+
+
 }
 
 .project__card__header {
@@ -33,32 +63,48 @@
     -moz-box-pack: justify;
     justify-content: space-between;
     color: var(--blue);
-    margin-bottom: 3.6rem;
+    margin-bottom: 1rem;
 }
 .header-icon{
+    font-size: 20px;
+    padding: 0.5rem;
     color: aliceblue;
+
+}
+.header-icon:hover{
+    color: #4c8ce6;
+    transform: scale(1.5);
 }
 
-.project__card {
-    padding: 2rem 1.8rem;
-    background-color: rgb(43, 43, 43);
-    border-radius: 1.2rem;
-    transition: all 0.25s ease 0s;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    color: rgb(255, 255, 255);
-    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%));
-
+.project__banner{
+    width: 100%;
+    aspect-ratio: 2;
+    border-radius: 20px;
 
 }
 
 .project-tech {
+    /* padding-top: 10px; */
+    /* padding-top: ; */
+    width: 100%;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
     display: flex;
+    /* padding: 2rem; */
 
 }
 
 .project-tech__name {
     padding: 5px;
     color: aliceblue;
+   
+    
+}
+.project-tech__name:hover{
+    text-decoration: overline;
+    color: #4c8ce6;
+    
+    
+    /* text-decoration: wavy; */
 }

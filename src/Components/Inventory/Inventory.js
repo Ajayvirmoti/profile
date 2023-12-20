@@ -34,8 +34,9 @@ const Inventory = () => {
             {
                 isHome ? <></> :
                        <>
-                        <div className="inventory"> <Skills className="test" /></div>
+                       
                         <div className="inventory"><Projects/></div>
+                        <div className="inventory"> <Skills className="test" /></div>
                        </>
             }
         </>

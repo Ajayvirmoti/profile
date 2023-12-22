@@ -12,6 +12,8 @@ import Projects from "./Projects/Projects.js";
 
 import Card from "./TiltCard/Card.js"
 import { delay } from "framer-motion";
+import { Route, Routes } from "react-router-dom";
+import Contact from "../Contact/Contact.js";
 const Inventory = () => {
     const [isHome, setNextPage] = useState(false);
     function sleep(ms) {
@@ -30,13 +32,12 @@ const Inventory = () => {
 
     const about = <div className="inventory__about"><About nextPage={nextPageHandler} /></div>;
     return (
-        <>  <div className="inventory">{about}</div>
+        <>  <div className="inventory" id="Inventory">{about}</div>
             {
                 isHome ? <></> :
                        <>
-                       
-                        <div className="inventory"><Projects/></div>
-                        <div className="inventory"> <Skills className="test" /></div>
+                       <div className="inventory"><Projects/></div>
+                       <div className="inventory"> <Skills className="test" /></div>
                        </>
             }
         </>

@@ -67,8 +67,8 @@ const NavBar = () => {
         <div className="navbar-item">
           <Link to="/"><div  className='menu-items'>About <HiOutlineEmojiHappy /></div></Link>
           <LinkScroll to="Skills" spy={true} smooth={true} offset={-70} duration={600}><div className='menu-items'>Skill <PiStackOverflowLogoThin /></div></LinkScroll>
-          <LinkScroll to="archive" spy={true} smooth={true} offset={-70} duration={500}><div className='menu-items'>Archive </div></LinkScroll>
-          <Link to="/Contact" spy={true} smooth={true} offset={-70} duration={500}><div className='menu-items'>Contact </div></Link>
+          <Link to="Inventory" spy={true} smooth={true} offset={-70} duration={500}><div className='menu-items'>Archive </div></Link>
+          <Link to="Contact" spy={true} smooth={true} offset={-70} duration={500}><div className='menu-items'>Contact </div></Link>
           <LinkScroll to="resume" spy={true} smooth={true} offset={-70} duration={500}>
             <motion.button
               whileHover={{ scale: 1.2 }}

@@ -19,6 +19,9 @@ import particlesOptions from "./particles.json";
 import Footer from './Components/Footer/Footer.js';
 import { Link, Route, Routes } from 'react-router-dom';
 import Contact from './Components/Contact/Contact.js';
+import ReactAudioPlayer from 'react-audio-player';
+// import AUDIO from "..public/";
+
 const App = () => {
   //Particle
   const [init, setInit] = useState(false);
@@ -56,7 +59,7 @@ const App = () => {
           }}
         />
         <div className='App-Body'>
-           {/* <NavBar /> */}
+          {/* <NavBar /> */}
           {/* <SideBar className="side-bar" /> */}
           <Inventory className="about" />
           <Footer />
@@ -64,13 +67,18 @@ const App = () => {
       </div>
     )
   }
+  const audioPath = process.env.PUBLIC_URL + '/thanos_dust_1.mp3';
   return (
     <div className='App'>
-      <NavBar/>
+       <audio autoPlay>
+        <source src={audioPath} type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <NavBar />
       <Routes>
         {/* <Route path='/Contact' element={<Contact />}> */}
-        <Route path='/' element={<Home />}/>
-        <Route path='/Contact' element={<Contact />}/>
+        <Route path='/' element={<Home />} />
+        {/* <Route path='/Contact' element={<Contact />}/> */}
       </Routes>
     </div>
   );

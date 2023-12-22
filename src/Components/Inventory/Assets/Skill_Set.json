@@ -5,25 +5,33 @@
                 "title": "FrontEnd",
                 "skills": [
                     {
-                        "name": "HTML"
+                        "name": "HTML",
+                        "borderCol":""
                     },
                     {
-                        "name": "CSS"
+                        "name": "CSS",
+                        "borderCol":""
                     },
                     {
-                        "name": "JavaScript"
+                        "name": "JavaScript",
+                        "borderCol":"#1c7e42"
                     },
                     {
-                        "name": "TypeScript"
+                        "name": "TypeScript",
+                        "borderCol":""
+                    },
+                    
+                    {
+                        "name": "Tailwind",
+                        "borderCol":"#94730e"
                     },
                     {
-                        "name": "ReactJs"
+                        "name": "ReactJs",
+                        "borderCol":"#2b569d"
                     },
                     {
-                        "name": "Tailwind"
-                    },
-                    {
-                        "name": "Redux"
+                        "name": "Redux",
+                        "borderCol":""
                     }
                 ]
             }
@@ -33,10 +41,12 @@
                 "title": "Backend",
                 "skills": [
                     {
-                        "name": "Nodejs"
+                        "name": "Nodejs",
+                        "borderCol":"#1c7e42"
                     },
                     {
-                        "name": "Expressjs"
+                        "name": "Expressjs",
+                        "borderCol":"#94730e"
                     }
                 ]
             }
@@ -46,13 +56,17 @@
                 "title": "Database",
                 "skills": [
                     {
-                        "name": "MySql"
+                        "name": "MySql",
+                        "borderCol":"#94730e"
+
                     },
                     {
-                        "name": "MongoDB"
+                        "name": "MongoDB",
+                        "borderCol":"#2b569d"
                     },
                     {
-                        "name": "Firebase"
+                        "name": "Firebase",
+                        "borderCol":"#1c7e42"
                     }
                 ]
             }
@@ -62,19 +76,24 @@
                 "title": "Others",
                 "skills": [
                     {
-                        "name": "Java"
+                        "name": "Java",
+                        "borderCol":"#973032"
                     },
                     {
-                        "name": "DSA"
+                        "name": "DSA",
+                        "borderCol":"#2b569d"
                     },
                     {
-                        "name": "Git"
+                        "name": "Git",
+                        "borderCol":"#94730e"
                     },
                     {
-                        "name": "Linux"
+                        "name": "Linux",
+                        "borderCol":"#9d4d17"
                     },
                     {
-                        "name": "RESTful APIs"
+                        "name": "RESTful APIs",
+                        "borderCol":"#1c7e42"
                     }
                 ]
             }

@@ -29,34 +29,44 @@ import RubberBand from 'react-reveal/RubberBand';
 
 
 // ];
-console.log(skillsData);
+// console.log(skillsData);
 const Skills = () => {
+    let borderCol = "";
     return (
-        <div className="skill-container">
+        <div className="skill-container" id="Skills">
             <RubberBand>
-            <h1 className="skill-container__title">What I Know</h1>
+                <h1 className="skill-container__title">What I Know</h1>
             </RubberBand>
             <div className="skill-container__Cards">
-            {skillsData.skillsData.map((skillType) => (
-                <Jello>
-                    <div className="skills__Card">
-                        {/* {console.log(skillType)} */}
-                        <div className="skills__title">
-                            <h1>{skillType.skill.title}</h1>
-                        </div>
-                        <div className="skill_grid">
+                {skillsData.skillsData.map((skillType) => (
+                    <Jello>
+                        <div className="skills__Card">
+                            {/* {console.log(skillType)} */}
+                            <div className="skills__title">
+                                <h1>{skillType.skill.title}</h1>
+                            </div>
+                            <div className="skill_grid">
 
-                            {skillType.skill.skills.map((skill, index) => (
+                                {skillType.skill.skills.map((skill) => (
 
-                                <div className="skill_name">
-                                    {skill.name}
-                                </div>
-                            ))}
+                                    <>
+                                        {/* { borderCol = skill.borderCol } */}
+                                        <div className="skill_name" style={{ borderColor: skill.borderCol }}>
+                                            {skill.name}
+                                            {/* {console.log(skill.borderCol)} */}
+
+                                        </div>
+                                    </>
+
+                                ))}
+                            </div>
+
                         </div>
-                    </div>
-                </Jello>
-            ))}
-        </div>
+
+                    </Jello>
+                ))}
+            </div>
+
         </div>
     );
 };

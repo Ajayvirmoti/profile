@@ -4,6 +4,7 @@
             "project": {
                 "title": "Profile",
                 "logo" : "profileBanner.png",
+                "about": "Portfolio React Web Application",
                 "tech": [
                     {
                         "name":"ReactJs"
@@ -21,6 +22,7 @@
             "project": {
                 "title": "Nex",
                 "logo" : "nex.gif",
+                "about":"Chat Application",
                 "tech": [
                     {
                         "name":"ReactJs"
@@ -39,6 +41,7 @@
             "project": {
                 "title": "Quizz Application",
                 "logo" : "quizzBanner.png",
+                "about":"A quizz react web application",
                 "tech": [
                     {
                         "name": "JavaScript"
@@ -56,6 +59,7 @@
             "project":{
                 "title": "Hyprland Rice",
                 "logo" : "hyprBanner.jpg",
+                "about": "Linux desktop environment setup",
                 "tech": [
                     {
                         "name": "Arch"
@@ -76,6 +80,7 @@
             "project": {
                 "title": "Charitable",
                 "logo" : "charitableBanner.jpg",
+                "about": "Charity website",
                 "tech": [
                     {
                         "name": "HTML"

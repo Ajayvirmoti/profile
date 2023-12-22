@@ -4,7 +4,7 @@ import { useState } from "react";
 import { SlArrowDown } from "react-icons/sl";
 import "./Inventory.css";
 import { SlActionRedo } from "react-icons/sl";
-import AnimatedComponent from "../Theme/AnimatedComponent.js";
+// import AnimatedComponent from "../Theme/AnimatedComponent.js";
 import Tilt from 'react-parallax-tilt';
 import img from "./photo.jpg";
 import Skills from "./Skills/Skills.js";

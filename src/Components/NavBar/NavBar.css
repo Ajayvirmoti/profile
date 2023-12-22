@@ -22,7 +22,9 @@
     display: flex;
 }
 .loader-logo-title{
-    font-family: "Montserrat',sans-serif";
+    /* font-family: "Montserrat',sans-serif"; */
+    font-family: "Red Hat Display", sans-serif;
+    text-transform: uppercase;
     color:#4c8ce6;
     font-weight: bold;
     filter: brightness(120%);
@@ -33,9 +35,11 @@
 }
 
 .navbar-item {
+    /* font-size: x-small; */
+
     color: #686f85;
     background-blend-mode:hard-light;
-    
+    gap: 1.8rem;
     display: flex;
     position: fixed;
     right: 0;
@@ -43,33 +47,38 @@
     align-items: center;
 }
 
-.navbar-item button{
-    padding: 20px;
-    background-color: transparent;
-    /* color: #00ffe0; */
-    color:#4c8ce6;
-
-    border: 0px;
-    /* animation-duration: 100ms; */
+.menu-items{
+    padding: 0.6px;
+    font-weight: 500;
+    transition: filter 0.25s ease 0s;
+    text-transform: uppercase;
+    font-family: "Red Hat Display", sans-serif;
+    /* font-size: larger; */
 }
 
-.navbar-item button:hover{
+.menu-items:hover{
     /* animation-duration: 100ms; */
     animation-direction: reverse;
     text-decoration: overline 2px;
+    color: #53608b;
     
 }
 
 .navbar-resume-button{ 
+    text-transform: uppercase;
+    color: #686f85;
+    font-weight: 500;
+    font-family: "Red Hat Display", sans-serif;
     height: 40px;
     /* color: white; */
     box-shadow: -1px 1px 5px black;
-    background-color: #961d1d;
+    /* background-color: #961d1d; */
     /* background-color: #0f172a;
     box-shadow: 0px 2px 2px #00ffe0; */
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398949 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096ddea1 0, transparent 75%));
+    box-shadow:0px 2px 5px #000000;
     margin: 20px;
     outline: 0;
-    grid-gap: 8px;
     align-items: center;
     /* background: 0 0; */
     border: 0px solid;
@@ -80,21 +89,17 @@
     /* border-image-repeat: round; */
     cursor: pointer;
     display: inline-flex;
-    flex-shrink: 0;
     font-size: 12px;
     gap: 8px;
     justify-content: center;
     line-height: 1.5;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 12px 16px;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    transition: all .14s ease-out;
-    white-space: nowrap;
-    box-sizing: border-box;
-
-  
-
+    /* text-decoration: none; */
+    /* text-overflow: ellipsis; */
+    /* transition: all .14s ease-out; */
+    /* white-space: nowrap; */
+    /* box-sizing: border-box; */
 }
 
 .navbar-resume-button:hover {

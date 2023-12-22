@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import "./NavBar.css";
 import 'react-toggle/style.css';
+// import { ReactDOM } from 'react';
+// import { ReactDOM } from 'react';
 import { TfiDownload } from "react-icons/tfi";
 import { PiStackOverflowLogoThin } from "react-icons/pi";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { Link } from 'react-scroll';
+import { Link as LinkScroll} from 'react-scroll';
+import { Link } from 'react-router-dom';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 const NavBar = () => {
@@ -62,11 +65,11 @@ const NavBar = () => {
       </div>
       {windowWidth >= 768 ? (
         <div className="navbar-item">
-          <Link to="About" spy={true} smooth={true} offset={-70} duration={500}><button>About <HiOutlineEmojiHappy /></button></Link>
-          <Link to="Skills" spy={true} smooth={true} offset={-70} duration={500}><button>Skill <PiStackOverflowLogoThin /></button></Link>
-          <Link to="archive" spy={true} smooth={true} offset={-70} duration={500}><button>Archive </button></Link>
-          <Link to="tech" spy={true} smooth={true} offset={-70} duration={500}><button>Tech </button></Link>
-          <Link to="resume" spy={true} smooth={true} offset={-70} duration={500}>
+          <Link to="/"><div  className='menu-items'>About <HiOutlineEmojiHappy /></div></Link>
+          <LinkScroll to="Skills" spy={true} smooth={true} offset={-70} duration={600}><div className='menu-items'>Skill <PiStackOverflowLogoThin /></div></LinkScroll>
+          <LinkScroll to="archive" spy={true} smooth={true} offset={-70} duration={500}><div className='menu-items'>Archive </div></LinkScroll>
+          <Link to="/Contact" spy={true} smooth={true} offset={-70} duration={500}><div className='menu-items'>Contact </div></Link>
+          <LinkScroll to="resume" spy={true} smooth={true} offset={-70} duration={500}>
             <motion.button
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
@@ -74,7 +77,7 @@ const NavBar = () => {
               className="navbar-resume-button">
               Resume <TfiDownload />
             </motion.button>
-          </Link>
+          </LinkScroll>
         </div>
       ):(toggl)
     

@@ -5,10 +5,10 @@ import { SlArrowDown } from "react-icons/sl";
 import { useInView } from 'react-intersection-observer';
 import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 import { PiGithubLogoFill } from "react-icons/pi";
-import { CiLinkedin } from "react-icons/ci";
-import { LuLinkedin } from "react-icons/lu";
+// import { CiLinkedin } from "react-icons/ci";
+// import { LuLinkedin } from "react-icons/lu";
 import { RiLinkedinLine } from "react-icons/ri";
 import { RiInstagramFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
@@ -59,10 +59,10 @@ const About = ({ nextPage }) => {
     }
 
     return (
-        <div className="About">
+        <div className="About" id="About">
             <Pulse>
                 <div className="intro">
-                    <h4 className="intro__greeting">' ' Hello,<PiHandWavingThin /> Thank you visiting, I am </h4>
+                    <h4 className="intro__greeting">' ' Hello,<PiHandWavingThin /> Thank you for visiting, I am </h4>
                     <h1 className="intro__name"> {name}</h1>
 
                     <h2 className="intro__tagline"> A Web Weaving Wizardry </h2>

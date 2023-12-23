@@ -55,9 +55,10 @@
 }
 
 .intro__description{
+    
     text-align: justify;
     width: 75%;
-    color: #ccd6f6;
+    color: #42485a;
     /* opacity: .7; */
     font-family:'Poppins', sans-serif;
     font-size: 120%;

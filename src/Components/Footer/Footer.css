@@ -1,5 +1,5 @@
 .footer{
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     background-color: black;
     background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 100%));
     padding: 2rem;

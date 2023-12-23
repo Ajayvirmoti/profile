@@ -14,6 +14,7 @@ import Card from "./TiltCard/Card.js"
 import { delay } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
 import Contact from "../Contact/Contact.js";
+import Others from "./Others/Others.js";
 const Inventory = () => {
     const [isHome, setNextPage] = useState(false);
     function sleep(ms) {
@@ -37,7 +38,9 @@ const Inventory = () => {
                 isHome ? <></> :
                        <>
                        <div className="inventory"><Projects/></div>
-                       <div className="inventory"> <Skills className="test" /></div>
+                       <div className="inventory"><Skills className="test" /></div>
+                       <div className="inventory"><Others/></div>
+                       
                        </>
             }
         </>

@@ -1,0 +1,24 @@
+.contact {
+    /* background-color: rgb(207, 0, 0); */
+    height: 100lvh;
+    width: 100%;
+    color: black;
+    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 100%)); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 100%));
+
+}
+
+.contact-form-container {}
+
+.navbar {
+    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 100%)); */
+}

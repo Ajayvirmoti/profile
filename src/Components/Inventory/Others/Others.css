@@ -1,0 +1,26 @@
+.others{
+    margin-top: 5rem;
+}
+.others-title{
+    padding: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color:#686f85;
+    font-weight: 600;
+}
+
+
+.others-grid{
+    padding: 2rem;
+    /* height:40rem; */
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(7,minmax(20rem,30rem));
+    overflow-x: scroll;
+    /* overflow-y: none`1; */
+}
+.others__card{
+    padding: 1rem;
+    color: aliceblue;
+    font-size: 0.5rem;
+}

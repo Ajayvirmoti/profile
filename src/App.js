@@ -45,7 +45,6 @@ const App = () => {
     return (
       <div className="app" >
         {init && <Particles options={particlesOptions} />}
-
         <AnimatedCursor
           innerSize={8}
           outerSize={35}
@@ -59,9 +58,11 @@ const App = () => {
           }}
         />
         <div className='App-Body'>
-          {/* <NavBar /> */}
-          {/* <SideBar className="side-bar" /> */}
-          <Inventory className="about" />
+          {/* <Inventory /> */}
+          <Routes>
+            <Route path='/' element={<Inventory/>}/>
+            <Route path='/Contact' element={<Contact/>}/>
+          </Routes>
           <Footer />
         </div>
       </div>
@@ -70,16 +71,12 @@ const App = () => {
   const audioPath = process.env.PUBLIC_URL + '/thanos_dust_1.mp3';
   return (
     <div className='App'>
-       <audio autoPlay>
+      <audio autoPlay>
         <source src={audioPath} type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>
       <NavBar />
-      <Routes>
-        {/* <Route path='/Contact' element={<Contact />}> */}
-        <Route path='/' element={<Home />} />
-        {/* <Route path='/Contact' element={<Contact />}/> */}
-      </Routes>
+      <Home />
     </div>
   );
 };

@@ -1,24 +1,120 @@
-.contact {
-    /* background-color: rgb(207, 0, 0); */
-    height: 100lvh;
-    width: 100%;
-    color: black;
-    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 100%)); */
+/* Contact.css */
+
+body {
+    margin: 0;
+}
+
+.contact-form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: aquamarine; */
+    height: 100vh;
+    padding: 20px;
+    /* Add the required padding */
 }
 
-.contact__form {
+.contact-form {
     display: flex;
     flex-direction: column;
+    min-width: 400px;
+    /* width: 100%; */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 100%));
-
+    /* background-color: #fff; */
 }
 
-.contact-form-container {}
-
-.navbar {
-    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 100%)); */
+.contact-form h2 {
+    text-align: center;
+    color: #333;
 }
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    /* background-color: #007bff; */
+    position: relative;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.input-container input,
+.input-container textarea {
+    /* background-color: #0056b3; */
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 100%));
+    color: #aaa;
+    resize: none;
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    z-index: 1;
+    /* Ensure the input is above the border */
+}
+
+.input-container input:focus,
+.input-container textarea:focus {
+    border-color: transparent;
+    /* Set border color to transparent when focused */
+    outline: none;
+    /* Remove the default focus outline */
+}
+
+.input-container label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #aaa;
+    pointer-events: none;
+    font-size: 14px;
+    transition: top 0.3s, font-size 0.3s;
+    z-index: 2;
+    /* Ensure the label is above the input */
+}
+
+.input-container.focused label,
+.input-container input:valid+label,
+.input-container input:focus+label {
+    top: -10px;
+    font-size: 12px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398949 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096ddea1 0, transparent 75%));
+    color:#ccc;
+    font-weight: 700;
+    font-size: larger;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 30% 50%, #bf398949 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096ddea1 0, transparent 75%));
+    
+}
+
+/* Additional styling for mail and LinkedIn buttons */
+.contact-form button[type="button"] {
+    margin-top: 10px;
+    background-color: #28a745;
+    /* Green color for the Mail button */
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+
+/*  */

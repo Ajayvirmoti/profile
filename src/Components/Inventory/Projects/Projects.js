@@ -12,7 +12,7 @@ import quizzerBanner from "../Assets/img/quizzBanner.png";
 import hyprBanner from "../Assets/img/hyprBanner.jpg";
 import GetImg from "./GetImg.js";
 import { color, domMax } from "framer-motion";
-import ScrollAnimation from "react-animate-on-scroll";
+// import ScrollAnimation from "react-animate-on-scroll";
 const Projects = () => {
     // const logo = require(Data.ProjectsData[0].project.logo).default;
     // const temp = require("../Assets/img/");
@@ -22,10 +22,8 @@ const Projects = () => {
             {/* <img src={nexBanner}/> */}
             <div className="projects__grid">
                 {Data.ProjectsData.map((data) => (
-                    <ScrollAnimation
-                        delay={500}
-
-                        animateIn="flipInX"
+                    <div
+    
                         className="scroll-animation"
                     >
                         <Card className="project__card">
@@ -45,7 +43,7 @@ const Projects = () => {
                                 ))}
                             </div>
                         </Card>
-                    </ScrollAnimation>
+                    </div>
                 ))}
             </div>
         </div>

@@ -1,51 +1,129 @@
-import React,{useState} from "react";
+// Contact.js
+
+import React, { useState } from "react";
 import "./Contact.css";
-import robo from "./giphyRobo.gif"
-// import { useState } from "react";
+import robo from "./giphyRobo.gif";
+
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [resume, setResume] = useState(null);
+    const [level, setLevel] = useState('');
+    const [nameFocused, setNameFocused] = useState(false);
+    const [emailFocused, setEmailFocused] = useState(false);
+    const [messageFocused, setMessageFocused] = useState(false);
+    const [levelFocused, setLevelFocused] = useState(false);
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        // Add your logic here to handle form submission
-        // You can use the form data (name, email, message, resume) for further processing
-
-        // Example: Display form data in the console
-        console.log('Name:', name);
-        console.log('Email:', email);
-        console.log('Message:', message);
-        console.log('Resume:', resume);
+    const handleInputChange = (inputType, value) => {
+        switch (inputType) {
+            case 'name':
+                setName(value);
+                break;
+            case 'email':
+                setEmail(value);
+                break;
+            case 'message':
+                setMessage(value);
+                break;
+            case 'level':
+                setLevel(value);
+                break;
+            default:
+                break;
+        }
     };
+
+    const handleInputFocus = (inputType) => {
+        switch (inputType) {
+            case 'name':
+                setNameFocused(true);
+                break;
+            case 'email':
+                setEmailFocused(true);
+                break;
+            case 'message':
+                setMessageFocused(true);
+                break;
+            case 'level':
+                setLevelFocused(true);
+                break;
+            default:
+                break;
+        }
+    };
+
+    const handleInputBlur = (inputType) => {
+        switch (inputType) {
+            case 'name':
+                setNameFocused(name.trim() !== '');
+                break;
+            case 'email':
+                setEmailFocused(email.trim() !== '');
+                break;
+            case 'message':
+                setMessageFocused(message.trim() !== '');
+                break;
+            case 'level':
+                setLevelFocused(level.trim() !== '');
+                break;
+            default:
+                break;
+        }
+    };
+
+    const autoExpand = (element) => {
+        element.style.height = 'auto';
+        element.style.height = element.scrollHeight + 'px';
+    };
+
     return (
-        <div>
-            <h2>Contact Me</h2>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Name:
-                    <input type="text" value={name} onChange={(e) => setName(e.target.value)} required />
-                </label>
+        <div className="contact-form-container">
+            <img src={robo}/>
 
-                <label>
-                    Email:
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                </label>
+            <div className="contact-form">
+                <h2>Contact Me</h2>
+                <form>
+                    <div className={`input-container ${nameFocused ? 'focused' : ''}`}>
+                        <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => handleInputChange('name', e.target.value)}
+                            onFocus={() => handleInputFocus('name')}
+                            onBlur={() => handleInputBlur('name')}
+                            required
+                        />
+                        <label>Your Name</label>
+                    </div>
 
-                <label>
-                    Message:
-                    <textarea value={message} onChange={(e) => setMessage(e.target.value)} required />
-                </label>
+                    <div className={`input-container ${emailFocused ? 'focused' : ''}`}>
+                        <input
+                            type="email"
+                            value={email}
+                            onChange={(e) => handleInputChange('email', e.target.value)}
+                            onFocus={() => handleInputFocus('email')}
+                            onBlur={() => handleInputBlur('email')}
+                            required
+                        />
+                        <label>Your Email</label>
+                    </div>
 
-                <label>
-                    Resume (Optional):
-                    <input type="file" accept=".pdf,.doc,.docx" onChange={(e) => setResume(e.target.files[0])} />
-                </label>
-
-                <button type="submit">Submit</button>
-            </form>
+                    <div className={`input-container ${messageFocused ? 'focused' : ''}`}>
+                        <textarea
+                            value={message}
+                            onChange={(e) => {
+                                handleInputChange('message', e.target.value);
+                                autoExpand(e.target);
+                            }}
+                            onFocus={() => handleInputFocus('message')}
+                            onBlur={() => handleInputBlur('message')}
+                            required
+                        />
+                        <label>Your Message</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     );
 };

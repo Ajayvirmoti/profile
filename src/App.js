@@ -10,7 +10,7 @@ import AnimatedCursor from 'react-animated-cursor';
 import Inventory from './Components/Inventory/Inventory.js';
 // import { SlArrowDown } from 'react-icons/sl';
 // import { color, motion } from 'framer-motion';
-import { useScroll } from 'framer-motion';
+// import { useScroll } from 'framer-motion';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
@@ -19,7 +19,7 @@ import particlesOptions from "./particles.json";
 import Footer from './Components/Footer/Footer.js';
 import { Link, Route, Routes } from 'react-router-dom';
 import Contact from './Components/Contact/Contact.js';
-import ReactAudioPlayer from 'react-audio-player';
+// import ReactAudioPlayer from 'react-audio-player';
 // import AUDIO from "..public/";
 
 const App = () => {

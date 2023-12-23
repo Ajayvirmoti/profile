@@ -8,7 +8,7 @@ const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
-    const [resume, setResume] = useState(null);
+    // const [resume, setResume] = useState(null);
     const [level, setLevel] = useState('');
     const [nameFocused, setNameFocused] = useState(false);
     const [emailFocused, setEmailFocused] = useState(false);

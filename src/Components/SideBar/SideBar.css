@@ -1,4 +1,4 @@
-.side-bar{
+/* .side-bar{
     size: 10px;
     display: grid;
     align-content: end;
@@ -17,15 +17,14 @@
     background-color: transparent;
     border: 0px;
     color: #4c8ce6;
-    /* flex-direction: row-reverse; */
-    
+  
 }
 
 .logo :hover{
-    /* animation-duration: 400ms; */
+  
     transition-duration: 400ms;
     display: flex;
     flex-direction: row-reverse;
-    /* padding: 0px; */
+   
     font-size: 30px;
-}
+} */

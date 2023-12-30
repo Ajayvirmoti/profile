@@ -1,13 +1,7 @@
-/* .side-bar{
-    size: 10px;
-    display: grid;
-    align-content: end;
+.side-bar{
     position: fixed;
-    width: 10px;
-    color: rgb(255, 255, 255);
-    height: 90vh;
-    font-size: 30px;
-    padding: 20px;
+    background-color: #4c8ce6;
+    width: 100%;
 
 }
 .logo{
@@ -27,4 +21,4 @@
     flex-direction: row-reverse;
    
     font-size: 30px;
-} */
+}

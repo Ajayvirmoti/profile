@@ -80,6 +80,7 @@ border-style:unset;
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 calc(33.33% - 20px);
+  /* flex: 0 0 calc(5=90% - 20px); */
   background: transparent;
 }
 .skill_name{
@@ -101,6 +102,28 @@ border-style:unset;
   border-radius: 5px;
   margin: 3px;
 }
+
+@media screen and (max-width: 1062px){
+  /* .skill_grid {
+    flex: 0 0 calc(50% - 20px);
+  } */
+
+  .skill-container__Cards{
+    flex-direction: column;
+    transition-property: all;
+    
+  }
+
+
+}
+
+
+
+
+
+
+
+
 
 /* .skil-container__title{
   font-family: 'Montserrat', sans-serif;

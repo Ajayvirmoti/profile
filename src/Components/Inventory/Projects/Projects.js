@@ -4,18 +4,7 @@ import Data from "../Assets/Projects.json";
 import Card from "../TiltCard/Card";
 import { FaProjectDiagram } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
-// import img from "../Assets/img/nex.gif"
-// import { toBeRequired } from "@testing-library/jest-dom/matchers";
-// import nexBanner from "../Assets/img/nex.gif";
-// import charitableBanner from "../Assets/img/charitableBanner.jpg";
-// import quizzerBanner from "../Assets/img/quizzBanner.png";
-// import hyprBanner from "../Assets/img/hyprBanner.jpg";
-// import GetImg from "./GetImg.js";
-// import { color, domMax } from "framer-motion";
-// import ScrollAnimation from "react-animate-on-scroll";
 const Projects = () => {
-    // const logo = require(Data.ProjectsData[0].project.logo).default;
-    // const temp = require("../Assets/img/");
     return (
         <div className="projects" id="Projects">
             <h1 className="projects__title">Projects</h1>

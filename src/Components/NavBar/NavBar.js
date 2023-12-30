@@ -7,15 +7,19 @@ import { TfiDownload } from "react-icons/tfi";
 import { PiStackOverflowLogoThin } from "react-icons/pi";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { Link as LinkScroll} from 'react-scroll';
+import { Link as LinkScroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
-import { HiOutlineMenuAlt3 } from "react-icons/hi";
+import Toggle from './Toggle';
+// import { click } from '@testing-library/user-event/dist/click';
+
 
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [hasBackground, setHasBackground] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
   const title = "<Curriculum vitae/>"
+  // const [isToggle, setToggle] = useState(false);
 
 
 
@@ -31,6 +35,9 @@ const NavBar = () => {
   const togglePanel = () => {
     setPanelOpen(!isPanelOpen);
   };
+  const linkClickHandler = () => {
+    setIsClicked(!isClicked);
+  }
 
 
 
@@ -56,19 +63,53 @@ const NavBar = () => {
     };
   }, [prevScrollPos]);
 
-  const toggl = <div><HiOutlineMenuAlt3/></div>;
+  const linkStyle = {
+    textDecoration: 'none',
+    color: 'inherit',
+  };
+  const linkDivStyle = {  
+    textDecoration: 'overline 2px',
+  };
+
+  console.log(linkDivStyle)
+  if(isClicked){
+    linkDivStyle.linkDivStyle = 'none';
+  }
+
 
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'} ${hasBackground ? 'background' : ''}`}>
       <div className="loader-logo">
         <div className="loader-logo-title"> {title} </div>
       </div>
-      {windowWidth >= 768 ? (
+      {windowWidth >= 872 ? (
         <div className="navbar-item">
-          <Link to="/"><div  className='menu-items'>About <HiOutlineEmojiHappy /></div></Link>
-          <LinkScroll to="Skills" spy={true} smooth={true} offset={-70} duration={600}><div className='menu-items'>Skill <PiStackOverflowLogoThin /></div></LinkScroll>
-          <Link to="Inventory" spy={true} smooth={true} offset={-70} duration={500}><div className='menu-items'>Archive </div></Link>
-          <Link to="Contact" spy={true} smooth={true} offset={-70} duration={500}><div className='menu-items'>Contact </div></Link>
+          <Link
+            to="/" style={linkStyle}
+          >
+            <div className='menu-items' style={linkDivStyle} onClick={linkClickHandler}>About <HiOutlineEmojiHappy/></div>
+          </Link>
+          <LinkScroll
+            to="Skills"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={600}
+          >
+            <div className='menu-items'>Skill <PiStackOverflowLogoThin /></div>
+          </LinkScroll>
+          <Link
+            to="Inventory"
+            style={linkStyle}
+          >
+            <div className='menu-items'>Archive </div>
+          </Link>
+          <Link
+            to="Contact"
+            style={linkStyle}
+          >
+            <div className='menu-items'>Contact </div>
+          </Link>
           <LinkScroll to="resume" spy={true} smooth={true} offset={-70} duration={500}>
             <motion.button
               whileHover={{ scale: 1.2 }}
@@ -79,9 +120,8 @@ const NavBar = () => {
             </motion.button>
           </LinkScroll>
         </div>
-      ):(toggl)
-    
-    }
+      ) : (<Toggle />)
+      }
 
     </nav>
   )

@@ -10,8 +10,8 @@ const Footer = () => {
             <div className="footer_container">
                 <div className="footer_addendum">
                     <div>
-                        <p>This Website is designed abd developed by Ajay Singh</p>
-                        <p>Copyright © 2024 Ajay   @A.V. </p>
+                        <p>This Website is designed and developed by Ajay ~ A.V</p>
+                        <p>Copyright © 2024 A.V. </p>
                     </div>
                     <ul className="footer__list">
                         <li><a href="" /><RiLinkedinLine className="footer_logo" /></li>

@@ -138,7 +138,8 @@
 }
 
 /* responsiveness for dive About */
-@media (max-width: 768px) {
+
+@media (max-width: 1022px) {
     .About__sticker {
       display: none;
     }

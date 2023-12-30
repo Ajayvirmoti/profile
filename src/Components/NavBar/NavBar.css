@@ -1,5 +1,6 @@
 .navbar {
     padding-top: 20px;
+    padding-bottom: 20px;
     /* position: absolute; */
     display:flex;
     align-items: center;
@@ -48,14 +49,17 @@
 }
 
 .menu-items{
-    padding: 0.6px;
+    padding: 5px;
     font-weight: 500;
     transition: filter 0.25s ease 0s;
     text-transform: uppercase;
     font-family: "Red Hat Display", sans-serif;
     /* font-size: larger; */
+    text-decoration: none;
 }
-
+.menu-items a:visited {
+    text-decoration: none;
+  }
 .menu-items:hover{
     /* animation-duration: 100ms; */
     animation-direction: reverse;
@@ -72,9 +76,6 @@
     height: 40px;
     /* color: white; */
     box-shadow: -1px 1px 5px black;
-    /* background-color: #961d1d; */
-    /* background-color: #0f172a;
-    box-shadow: 0px 2px 2px #00ffe0; */
     background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398949 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096ddea1 0, transparent 75%));
     box-shadow:0px 2px 5px #000000;
     margin: 20px;

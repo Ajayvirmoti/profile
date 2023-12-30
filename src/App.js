@@ -23,12 +23,15 @@ import Contact from './Components/Contact/Contact.js';
 // import AUDIO from "..public/";
 
 const App = () => {
-  //Particle
+  const [isPhone, setPhone] = useState(true);
   const [init, setInit] = useState(false);
   useEffect(() => {
     if (init) {
       return;
     }
+    // if (window.innerWidth < 900) {
+    //   setPhone(false);
+    // }
     initParticlesEngine(async (engine) => {
       await loadFull(engine);
     }).then(() => {
@@ -36,19 +39,27 @@ const App = () => {
     });
   }, []);
 
-  // const [atHome, setPage] = useState('False');
-  // const [isSnapped, setIsSnapped] = useState(false);
-  // const { scrollYProgress } = useScroll();
-
-
   const Home = () => {
     return (
       <div className="app" >
-        {init && <Particles options={particlesOptions} />}
-        <AnimatedCursor
+        {/*  */}
+        
+      </div>
+    )
+  }
+  const audioPath = process.env.PUBLIC_URL + '/thanos_dust_1.mp3';
+  return (
+    <div className='App'>
+      {init && <Particles options={particlesOptions} />}
+      <audio autoPlay>
+        <source src={audioPath} type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <NavBar />
+      <div className="app__body">
+      {isPhone?<AnimatedCursor
           innerSize={8}
           outerSize={35}
-          // color='60,90,255'
           color='255,255,255'
           outerAlpha={0.1}
           innerScale={2}
@@ -56,7 +67,7 @@ const App = () => {
           outerStyle={{
             mixBlendMode: 'exclusion'
           }}
-        />
+        />:""}
         <div className='App-Body'>
           {/* <Inventory /> */}
           <Routes>
@@ -65,18 +76,7 @@ const App = () => {
           </Routes>
           <Footer />
         </div>
-      </div>
-    )
-  }
-  const audioPath = process.env.PUBLIC_URL + '/thanos_dust_1.mp3';
-  return (
-    <div className='App'>
-      <audio autoPlay>
-        <source src={audioPath} type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio>
-      <NavBar />
-      <Home />
+        </div>
     </div>
   );
 };

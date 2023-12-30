@@ -1,6 +1,6 @@
 import React from "react";
 import "./Projects.css";
-import Data from "../Assets/Projects.json";
+import Data from "../../Assets/Projects.json";
 import Card from "../TiltCard/Card";
 import { FaProjectDiagram } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
@@ -21,7 +21,7 @@ const Projects = () => {
                                 <div className="header-icon"><PiGithubLogoFill /></div>
                             </header>
                             
-                            <img src={require("../Assets/img/" + data.project.logo)} className="project__banner" />
+                            <img src={require("../../Assets/img/" + data.project.logo)} className="project__banner" />
                             <div className="project__card__title">
                                 <h1 className="project__title">{data.project.title}</h1>
                                 <div className="project__description">{data.project.about}</div>

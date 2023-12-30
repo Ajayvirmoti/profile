@@ -2,35 +2,36 @@
     padding-top: 20px;
     padding-bottom: 20px;
     /* position: absolute; */
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
     /* background-color: transparent; */
-    color: white;
+    /* color: white; */
     transition: transform 0.3s ease-in-out;
     backdrop-filter: blur(20px);
     /* background-color: #0f172a; */
-    background:(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%));
+    background: (--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%));
 
 
     z-index: 10;
 }
 
-.loader-logo{
+.loader-logo {
     margin: 20px;
     display: flex;
 }
-.loader-logo-title{
+
+.loader-logo-title {
     /* font-family: "Montserrat',sans-serif"; */
     font-family: "Red Hat Display", sans-serif;
     text-transform: uppercase;
-    color:#4c8ce6;
+    color: #4c8ce6;
     font-weight: bold;
     filter: brightness(120%);
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
-    font-size:20px;
+    font-size: 20px;
     display: flex;
     align-items: center;
 }
@@ -38,8 +39,8 @@
 .navbar-item {
     /* font-size: x-small; */
 
-    color: #686f85;
-    background-blend-mode:hard-light;
+   
+    background-blend-mode: hard-light;
     gap: 1.8rem;
     display: flex;
     position: fixed;
@@ -48,7 +49,7 @@
     align-items: center;
 }
 
-.menu-items{
+.menu-items {
     padding: 5px;
     font-weight: 500;
     transition: filter 0.25s ease 0s;
@@ -56,19 +57,22 @@
     font-family: "Red Hat Display", sans-serif;
     /* font-size: larger; */
     text-decoration: none;
+    color: #53608b;
 }
+
 .menu-items a:visited {
     text-decoration: none;
-  }
-.menu-items:hover{
+}
+
+.menu-items:hover {
     /* animation-duration: 100ms; */
     animation-direction: reverse;
     text-decoration: overline 2px;
     color: #53608b;
-    
+
 }
 
-.navbar-resume-button{ 
+.navbar-resume-button {
     text-transform: uppercase;
     color: #686f85;
     font-weight: 500;
@@ -77,7 +81,7 @@
     /* color: white; */
     box-shadow: -1px 1px 5px black;
     background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398949 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096ddea1 0, transparent 75%));
-    box-shadow:0px 2px 5px #000000;
+    box-shadow: 0px 2px 5px #000000;
     margin: 20px;
     outline: 0;
     align-items: center;
@@ -85,7 +89,7 @@
     border: 0px solid;
     border-radius: 5px;
     /* border-color: #000000; */
-  
+
     /* border-image: linear-gradient(to top,#009281, #00292b) 1 ; */
     /* border-image-repeat: round; */
     cursor: pointer;
@@ -107,23 +111,48 @@
     /* box-shadow: 4px 4px 2px #00ffe0; */
     box-shadow: 4px 4px 2px black;
     background-color: #0f172a;
-    transform: translate(-4px,-4px);
+    transform: translate(-4px, -4px);
     transition: 500ms;
 }
-.navbar-resume-button:focus-within{
+
+.navbar-resume-button:focus-within {
     outline-offset: 5px;
 }
-
-
 
 .navbar.visible {
     transition: 600ms;
     transform: translateY(0);
-  }
-  
-  .navbar.hidden {
+}
+
+.navbar.hidden {
     transition: 600ms;
     transform: translateY(-100%);
-  }
-  
+}
 
+.toggle-icon{
+    padding: 1.2rem;
+    font-size: x-large;
+    color: #53608b;
+
+}
+.toggle-icon:hover{
+    color: #4c8ce6;
+    transform: scale(1.2);
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    /* background-color:#0f172a; */
+    color: #53608b;
+    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0), radial-gradient(ellipse at 60% 0%, #096bde10 0)); */
+    backdrop-filter: blur(20px);
+    /* background-color: #0f172a; */
+    /* background: (--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%)); */
+
+
+}

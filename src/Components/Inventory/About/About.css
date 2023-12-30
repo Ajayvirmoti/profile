@@ -10,7 +10,7 @@
 }  
 
 .intro{
-    /* width: fit-content; */
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -111,7 +111,7 @@
     /* width: 25vmax;
     filter: contrast(90%) brightness(30%); */
 }
-.container__logo{
+.intro__container__icon {
     margin-top: 50px;
     width: 200px;
     display: flex;
@@ -122,47 +122,49 @@
 }
 
 /* logo in on row  with padding and hover*/
-.intro__logo {
-    font-size: 3vmin;
+.intro__icon {
+    font-size: 2vmin;
     align-items: center;
     font-weight:900;
     position: relative;
     padding: 5px;
 }
 
-.intro__logo:hover{
+.intro__icon :hover{
     color: #ccd6f6;
-    animation-duration: 200ms;
+    animation-duration: 100ms;
     transition: 500ms;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 /* responsiveness for dive About */
 
-@media (max-width: 1022px) {
+@media (max-width: 900px) {
     .About__sticker {
       display: none;
     }
     .About{
-        
-        margin-top: 10%;
+        margin-top: 25%;
         width: fit-content;
         align-items: center;
         align-content: center;
     }
     .intro{
+        gap: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
         /* width: 10%; */
     }
     .intro__name{
+        /* width: 100%; */
         letter-spacing: 3px;
         padding-top: 2%;
         font-size: 10vmin;
     }
     .intro__tagline{
-        font-size: 12vmin;
+        font-size: 2rem;
         word-spacing: 5px;
         /* letter-spacing: 2px; */
     }
@@ -172,39 +174,8 @@
         /* display: none; */
         width: fit-content;
     }
-}
-
-@media (max-height: 794px) {
-    .About__sticker {
-      display: none;
+    .intro__description{
+        font-size: 1rem;
     }
-    .About{
-        
-        margin-top: 10%;
-        width: fit-content;
-        align-items: center;
-        align-content: center;
-    }
-    .intro{
-        display: flex;
-        flex-direction: column;
-        /* align-items: center; */
-        /* width: 10%; */
-    }
-    .intro__name{
-        letter-spacing: 3px;
-        padding-top: 2%;
-        font-size: 10vmin;
-    }
-    .intro__tagline{
-        font-size: 12vmin;
-        word-spacing: 5px;
-        /* letter-spacing: 2px; */
-    }
-
-    .temp_about{
-        width: min-content;
-        /* display: none; */
-        width: fit-content;
-    }
+    
 }

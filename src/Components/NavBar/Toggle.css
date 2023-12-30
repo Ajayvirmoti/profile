@@ -1,0 +1,45 @@
+
+
+
+.toggle{
+    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 60% 0%, #33001fc4 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096dde3a 0, transparent 100%), radial-gradient(ellipse at 40% 0%, #000408 0, transparent 100%)); */
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    height: 50lvh;
+    right: 0;
+    position: absolute;
+    border-radius: 20px 0px 0px 20px;
+    background-color: #010409;
+
+    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #33001f3a 0, transparent 80%), radial-gradient(ellipse at 60% 0%, #096dde1a 0, transparent 60%), radial-gradient(ellipse at 40% 0%, #0004088c 0, transparent 80%)); */
+}
+.toggle-header{
+    color:#a6b1d4;
+    font-size: 2rem;
+    display: flex;
+    width: 90%;
+    justify-content: end;
+    padding: 10px;
+    /* padding-right: 10px; */
+    /* margin-right: 20px; */
+}
+.toggle__items{
+    /* padding-top: 10%; */
+     background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #33001f3a 0, transparent 80%), radial-gradient(ellipse at 60% 0%, #096dde1a 0, transparent 60%), radial-gradient(ellipse at 40% 0%, #0004088c 0, transparent 80%));
+    display: flex;
+    flex-direction: column;
+    height: 100lvh;
+    padding: 10%;
+    font-weight: 700;
+    transition: filter 0.25s ease 0s;
+    text-transform: uppercase;
+    font-family: "Red Hat Display", sans-serif;
+    /* font-size: larger; */
+    text-decoration: none;
+    color: #a6b1d4;
+    gap:10px;
+    /* justify-content: space-between; */
+}
+.toggle__link{
+    
+}

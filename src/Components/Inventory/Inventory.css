@@ -41,3 +41,13 @@
 .test {
   backdrop-filter: blur(10px);
 }
+
+@media screen and (max-width:600px) {
+  .inventory{
+    /* padding-left: 0px; */
+    /* padding-right: 0px; */
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  
+}

@@ -42,20 +42,13 @@
 
 .skills__Card {
   padding: 2rem;
-  border-left: dashed 1px;
-  border-style: solid;
   box-shadow: 0px 0px 10px rgb(1, 1, 12);
   backdrop-filter: blur(10);
   background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 60% 0%, #096bde10 0, transparent 75%));
   filter: contrast(120%);
-  border-width: 1px;
   border-radius: 10px;
-
-  border-top-left-radius: 0%;
-  border-bottom-left-radius: 0%;
-  border-color: #4c8ce6;
   border-radius: 10px;
-  border-style: unset;
+  
 
 
   margin: 10px;

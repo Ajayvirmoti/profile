@@ -1,11 +1,8 @@
-
-
-
-.toggle{
-    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 60% 0%, #33001fc4 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096dde3a 0, transparent 100%), radial-gradient(ellipse at 40% 0%, #000408 0, transparent 100%)); */
-    width: 50%;
+.toggle {
+    background: var(--light-grad-pink-blue, radial-gradient(ellipse at 60% 0%, #33001fc4 0, transparent 100%), radial-gradient(ellipse at 60% 0%, #096dde3a 0, transparent 100%), radial-gradient(ellipse at 40% 0%, #000408 0, transparent 100%));
+    width: 80%;
     background-color: rgb(255, 255, 255);
-    height: 50lvh;
+    height: 100%;
     right: 0;
     position: absolute;
     border-radius: 20px 0px 0px 20px;
@@ -13,8 +10,9 @@
 
     /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #33001f3a 0, transparent 80%), radial-gradient(ellipse at 60% 0%, #096dde1a 0, transparent 60%), radial-gradient(ellipse at 40% 0%, #0004088c 0, transparent 80%)); */
 }
-.toggle-header{
-    color:#a6b1d4;
+
+.toggle-header {
+    color: #a6b1d4;
     font-size: 2rem;
     display: flex;
     width: 90%;
@@ -23,11 +21,14 @@
     /* padding-right: 10px; */
     /* margin-right: 20px; */
 }
-.toggle__items{
+
+.toggle-items {
     /* padding-top: 10%; */
-     background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #33001f3a 0, transparent 80%), radial-gradient(ellipse at 60% 0%, #096dde1a 0, transparent 60%), radial-gradient(ellipse at 40% 0%, #0004088c 0, transparent 80%));
+    /* background: var(--light-grad-pink-blue, radial-gradient(ellipse at 40% 0%, #33001f3a 0, transparent 80%), radial-gradient(ellipse at 60% 0%, #096dde1a 0, transparent 60%), radial-gradient(ellipse at 40% 0%, #0004088c 0, transparent 80%)); */
     display: flex;
+    
     flex-direction: column;
+    justify-content: space-between;
     height: 100lvh;
     padding: 10%;
     font-weight: 700;
@@ -37,9 +38,33 @@
     /* font-size: larger; */
     text-decoration: none;
     color: #a6b1d4;
-    gap:10px;
+    gap: 10px;
     /* justify-content: space-between; */
 }
-.toggle__link{
-    
+
+.toggle-items__menu {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.toggle__icon__container {
+    margin-top: 50px;
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    color: #4c8ce6;
+    /* padding: 10px; */
+}
+
+/* logo in on row  with padding and hover*/
+.toggle__icon {
+    font-size: 4vmin;
+    align-items: center;
+    font-weight: 900;
+    position: relative;
+    padding: 10px;
 }

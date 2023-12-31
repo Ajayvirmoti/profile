@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-.About{
+.About {
     display: flex;
     /* padding-left: 5%; */
     /* padding-right: 5%; */
     align-items: center;
-   
 
-}  
 
-.intro{
+}
+
+.intro {
     /* width: 100%; */
     display: flex;
     flex-direction: column;
@@ -18,54 +18,56 @@
     /* padding-top: 10px; */
 
 }
-.intro__greeting{
+
+.intro__greeting {
     width: 75%;
-    color:#ccd6f6;
+    color: #ccd6f6;
     padding-top: 40px;
     /* width: 100px; */
     /* width: 20%; */
     margin-top: 0px;
     margin-bottom: 0px;
     /* color:#4c8ce6; */
-      /* font-family: "Montserrat',sans-serif"; */
-      font-family: Helvetica, sans-serif;
+    /* font-family: "Montserrat',sans-serif"; */
+    font-family: Helvetica, sans-serif;
     /* font-family: 'Poppins', sans-serif; */
 }
 
-.intro__name{
+.intro__name {
     width: max-content;
     opacity: 1;
     font-family: "Montserrat',sans-serif";
     margin-top: 0px;
     margin-bottom: 0px;
     /* font-size:100%; */
-    color:#4c8ce6;
+    color: #4c8ce6;
     font-size: 500%;
 }
 
-.intro__tagline{
+.intro__tagline {
     /* line-gap-override: 2px; */
 
     width: 75%;
     /* text-align: justify; */
     margin: 0px;
     font-size: 500%;
-    color:#686f85;
+    color: #686f85;
     font-family: 'Poppins', sans-serif;
 }
 
-.intro__description{
-    
+.intro__description {
+
     text-align: justify;
     width: 75%;
     color: #42485a;
     /* opacity: .7; */
-    font-family:'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 120%;
-   
+
 }
-.next-page__arrow{
-    color:#4c8ce6;
+
+.next-page__arrow {
+    color: #4c8ce6;
     animation: bouncing 1.5s infinite ease-in-out;
     bottom: 0;
     display: block;
@@ -75,19 +77,27 @@
     position: absolute;
     width: 90px;
     transition: 200ms;
-} 
+}
 
-.arrow :hover{
+.arrow :hover {
     width: 90px;
     color: #ccd6f6;
-    
+
 
 }
 
 @keyframes bouncing {
-    0% {bottom: 0px;}
-    50% {bottom: 20px;}
-    100% {bottom: 0px;}
+    0% {
+        bottom: 0px;
+    }
+
+    50% {
+        bottom: 20px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
 }
 
 .location {
@@ -95,7 +105,7 @@
     width: fit-content;
 }
 
-.About__sticker{
+.About__sticker {
     /* filter: invert(); */
     /* width according to neighber div */
     /* width: 20vmax; */
@@ -105,18 +115,20 @@
     /* height: min-content; */
     filter: contrast(90%) brightness(30%);
 }
-.About__sticker{
+
+.About__sticker {
     /* filter: invert(); */
     /* width according to neighber div */
     /* width: 25vmax;
     filter: contrast(90%) brightness(30%); */
 }
+
 .intro__container__icon {
     margin-top: 50px;
-    width: 200px;
+    /* width: 200px; */
     display: flex;
     justify-content: space-between;
-    flex-direction: row;    
+    flex-direction: row;
     color: #4c8ce6;
     /* padding: 10px; */
 }
@@ -125,31 +137,33 @@
 .intro__icon {
     font-size: 2vmin;
     align-items: center;
-    font-weight:900;
+    font-weight: 900;
     position: relative;
     padding: 5px;
 }
 
-.intro__icon :hover{
+.intro__icon :hover {
     color: #ccd6f6;
     animation-duration: 100ms;
     transition: 500ms;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 /* responsiveness for dive About */
 
 @media (max-width: 900px) {
     .About__sticker {
-      display: none;
+        display: none;
     }
-    .About{
+
+    .About {
         margin-top: 25%;
         width: fit-content;
         align-items: center;
         align-content: center;
     }
-    .intro{
+
+    .intro {
         gap: 10px;
         display: flex;
         flex-direction: column;
@@ -157,25 +171,36 @@
         width: 100%;
         /* width: 10%; */
     }
-    .intro__name{
+
+    .intro__name {
         /* width: 100%; */
         letter-spacing: 3px;
         padding-top: 2%;
         font-size: 10vmin;
     }
-    .intro__tagline{
+
+    .intro__tagline {
         font-size: 2rem;
         word-spacing: 5px;
         /* letter-spacing: 2px; */
     }
 
-    .temp_about{
+    .temp_about {
         width: min-content;
         /* display: none; */
         width: fit-content;
     }
-    .intro__description{
+
+    .intro__description {
         font-size: 1rem;
     }
-    
+
+    .intro__container__icon {
+        gap: 5px;
+    }
+
+    .intro__icon {
+        font-size: 2rem;
+    }
+
 }

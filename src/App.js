@@ -2,26 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import NavBar from './Components/NavBar/NavBar';
 import "./App.css";
-// import { Canvas } from 'react-three-fiber';
-// import SideBar from './Components/SideBar/SideBar.js';
-// import { Triangle } from 'react-loader-spinner'
-// import Resume from "./Components/Resume/Resume.js";
 import AnimatedCursor from 'react-animated-cursor';
 import Inventory from './Components/Inventory/Inventory.js';
-// import { SlArrowDown } from 'react-icons/sl';
-// import { color, motion } from 'framer-motion';
-// import { useScroll } from 'framer-motion';
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
-// import ScrollAnimation from 'react-animate-on-scroll';
-// import Jello from 'react-reveal/Jello';
 import Footer from './Components/Footer/Footer.js';
 import { Link, Route, Routes } from 'react-router-dom';
 import Contact from './Components/Contact/Contact.js';
-// import ReactAudioPlayer from 'react-audio-player';
-// import AUDIO from "..public/";
-
 const App = () => {
   const [isPhone, setPhone] = useState(true);
   const [init, setInit] = useState(false);
@@ -29,9 +17,6 @@ const App = () => {
     if (init) {
       return;
     }
-    // if (window.innerWidth < 900) {
-    //   setPhone(false);
-    // }
     initParticlesEngine(async (engine) => {
       await loadFull(engine);
     }).then(() => {

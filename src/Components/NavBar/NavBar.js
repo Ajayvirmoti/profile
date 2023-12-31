@@ -1,43 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import "./NavBar.css";
 import 'react-toggle/style.css';
-// import { ReactDOM } from 'react';
-// import { ReactDOM } from 'react';
 import { TfiDownload } from "react-icons/tfi";
 import { PiStackOverflowLogoThin } from "react-icons/pi";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
-import { motion } from "framer-motion";
 import { Link as LinkScroll } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import Toggle from './Toggle';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
-
-// import { click } from '@testing-library/user-event/dist/click';
-
-
+import { Triangle } from 'react-loader-spinner';
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [hasBackground, setHasBackground] = useState(false);
-  const title = "<Curriculum vitae/>"
-  const [isToggle, setToggle] = useState(false); 
+  const [isToggle, setToggle] = useState(true);
 
   // handel window size
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   // const [isPanelOpen, setPanelOpen] = useState(false);
   useEffect(() => {
+    
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
-  // const togglePanel = () => {
-  //   setPanelOpen(!isPanelOpen);
-  // };
-
   const isToggleClickHandler = () => {
     setToggle(!isToggle);
   }
+  
 
 
   // Handel window scroll
@@ -64,8 +54,16 @@ const NavBar = () => {
 
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'} ${hasBackground ? 'background' : ''}`}>
-       <div className="loader-logo">
-        <div className="loader-logo-title"> {title} </div>
+      <div className="loader-logo">
+        {window.innerWidth>=768 ? <div className='title'>Curriculum vitae</div> : <Triangle
+          visible={true}
+          height="30"
+          width="30"
+          color="#4c8ce6"
+          ariaLabel="triangle-loading"
+          wrapperStyle={{}}
+          wrapperClass="loader-logo"
+        />}
       </div>
       {windowWidth >= 872 ? (
         <div className="navbar-item">
@@ -142,17 +140,15 @@ const NavBar = () => {
           >
             <div className='menu-items'>Contact </div>
           </NavLink>
-          <LinkScroll to="resume" spy={true} smooth={true} offset={-70} duration={500}>
-            <motion.button
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8 }}
-              onClick={() => null}
-              className="navbar-resume-button">
-              Resume <TfiDownload />
-            </motion.button>
-          </LinkScroll>
+          <div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            onClick={() => null}
+            className="navbar-resume-button">
+            Resume <TfiDownload />
+          </div>
         </div>
-      ) : (isToggle?(<HiOutlineMenuAlt3 onClick={isToggleClickHandler} className="toggle-icon"/>):(<div className='toggle-container'><Toggle isToggleProp={isToggleClickHandler}/></div>))
+      ) : (isToggle ? (<HiOutlineMenuAlt3 onClick={isToggleClickHandler} className="toggle-icon" />) : (<div className='toggle-container'><Toggle isToggleProp={isToggleClickHandler} /></div>))
       }
     </nav>
   )

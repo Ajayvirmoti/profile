@@ -1,9 +1,6 @@
 import React from "react";
-// import { Card } from "react-bootstrap";
 import Tilt from 'react-parallax-tilt';
-import { FaJava } from "react-icons/fa";
 import "./Card.css";
-import { motion } from "framer-motion";
 
 const Card =(props)=>{
     const classes =  'card ' + props.className; 

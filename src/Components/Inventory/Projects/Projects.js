@@ -1,14 +1,13 @@
 import React from "react";
 import "./Projects.css";
 import Data from "../../Assets/Projects.json";
-import Card from "../TiltCard/Card";
+import Card from "../../TiltCard/Card";
 import { FaProjectDiagram } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
 const Projects = () => {
     return (
         <div className="projects" id="Projects">
             <h1 className="projects__title">Projects</h1>
-            {/* <img src={nexBanner}/> */}
             <div className="projects__grid">
                 {Data.ProjectsData.map((data) => (
                     <div

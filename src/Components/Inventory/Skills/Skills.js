@@ -14,7 +14,6 @@ const Skills = () => {
                 {skillsData.skillsData.map((skillType) => (
                     <Jello>
                         <div className="skills__Card">
-                            {/* {console.log(skillType)} */}
                             <div className="skills__title">
                                 <h1>{skillType.skill.title}</h1>
                             </div>
@@ -22,11 +21,8 @@ const Skills = () => {
 
                                 {skillType.skill.skills.map((skill) => (
                                     <>
-                                        {/* { borderCol = skill.borderCol } */}
                                         <div className="skill_name" style={{ borderColor: skill.borderCol }}>
                                             {skill.name}
-                                            {/* {console.log(skill.borderCol)} */}
-
                                         </div>
                                     </>
 

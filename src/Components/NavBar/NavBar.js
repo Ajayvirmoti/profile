@@ -141,11 +141,9 @@ const NavBar = () => {
             <div className='menu-items'>Contact </div>
           </NavLink>
           <div
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
             onClick={() => null}
             className="navbar-resume-button">
-            Resume <TfiDownload />
+            <h5>RESUME</h5> <TfiDownload />
           </div>
         </div>
       ) : (isToggle ? (<HiOutlineMenuAlt3 onClick={isToggleClickHandler} className="toggle-icon" />) : (<div className='toggle-container'><Toggle isToggleProp={isToggleClickHandler} /></div>))

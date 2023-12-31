@@ -5,6 +5,7 @@
     /* padding-left: 5%; */
     /* padding-right: 5%; */
     align-items: center;
+    padding-bottom: 5rem;
 
 
 }
@@ -125,10 +126,9 @@
 
 .intro__container__icon {
     margin-top: 50px;
-    /* width: 200px; */
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    gap:5px;
+    width: fit-content;
     color: #4c8ce6;
     /* padding: 10px; */
 }
@@ -139,10 +139,10 @@
     align-items: center;
     font-weight: 900;
     position: relative;
-    padding: 5px;
+    padding: 10px;
 }
 
-.intro__icon :hover {
+.intro__icon:hover {
     color: #ccd6f6;
     animation-duration: 100ms;
     transition: 500ms;

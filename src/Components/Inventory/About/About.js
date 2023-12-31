@@ -10,6 +10,7 @@ import img from "./giphy1.gif";
 import Pulse from 'react-reveal/Pulse';
 import { RiTwitterXFill } from "react-icons/ri";
 import { PiInstagramLogo } from "react-icons/pi";
+import Data from "../../Assets/ProfileData.json";
 const About = () => {
     const [useArrow, setArrow] = useState(true);
     // Handel window scroll  
@@ -50,20 +51,22 @@ const About = () => {
 
     }
 
-
-
     const clickHandler_git = () =>{
-        window.open("https://github.com/Ajayvirmoti/")
+        window.open(Data.AboutData.ReDirectLink.GitHub)
     }  
-    const clickHandler_lc = () =>{
-        window.open("https://leetcode.com/ajayvirmoti_personal/")   
+    const clickHandler_Lc = () =>{
+        window.open(Data.AboutData.ReDirectLink.LeetCode)   
     }
-    const clickHandler_ln = () =>{
-        window.open("https://www.linkedin.com/in/ajay-virmoti-21ab931b2/")
+    const clickHandler_Ln = () =>{
+        window.open(Data.AboutData.ReDirectLink.LinkedIn)
     }
-    const clickHandler_insta = () =>{
-        window.open("https://www.instagram.com/ajayvirmoti/")
+    const clickHandler_Insta = () =>{
+        window.open(Data.AboutData.ReDirectLink.insta)
         
+    }
+    const clickHandler_X =()=>{
+        window.open(Data.AboutData.ReDirectLink.x)
+
     }
 
     return (
@@ -71,22 +74,22 @@ const About = () => {
             <Pulse>
                 <div className="intro">
                     <h4 className="intro__greeting">' ' Hello,<PiHandWavingThin /> Thank you for visiting, I am </h4>
-                    <h1 className="intro__name"> {name}</h1>
+                    <h1 className="intro__name"> {Data.AboutData.Name}</h1>
 
-                    <h2 className="intro__tagline"> A Web Weaving Wizardry </h2>
+                    <h2 className="intro__tagline"> {Data.AboutData.Title} </h2>
 
-                    <p className="intro__description">A passionate software developer with a mission to transform innovative ideas into robust and scalable digital solutions . With a keen eye for detail and a love for elegant code, I navigate the ever-evolving landscape of technology.</p>
+                    <p className="intro__description">{Data.AboutData.Description}</p>
                     <div className="location"><FaLocationDot /> INDIA </div>
                     <div className="intro__container__icon">
-                        <div className="intro__icon"><VscGithubAlt onClick={clickHandler_git}/></div>
+                        <div className="intro__icon" onClick={clickHandler_git}><VscGithubAlt /></div>
                         <hr/>
-                        <div className="intro__icon"><RiLinkedinLine onClick={clickHandler_ln}/></div>
+                        <div className="intro__icon" onClick={clickHandler_Ln}><RiLinkedinLine /></div>
                         <hr/>
-                        <div className="intro__icon"><SiLeetcode /></div>
+                        <div className="intro__icon" onClick={clickHandler_Lc}><SiLeetcode /></div>
                         <hr/>
-                        <div className="intro__icon"><PiInstagramLogo /></div>
+                        <div className="intro__icon"  onClick={clickHandler_Insta}><PiInstagramLogo/></div>
                         <hr/>
-                        <div className="intro__icon"><RiTwitterXFill/></div>
+                        <div className="intro__icon"  onClick={clickHandler_X}><RiTwitterXFill/></div>
                     </div>
                 </div>
             </Pulse>

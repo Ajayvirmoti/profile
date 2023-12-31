@@ -8,7 +8,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import particlesOptions from "./particles.json";
 import Footer from './Components/Footer/Footer.js';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Contact from './Components/Contact/Contact.js';
 const App = () => {
   const [isPhone, setPhone] = useState(true);

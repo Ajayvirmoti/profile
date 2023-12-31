@@ -1,0 +1,298 @@
+{
+    "NavBarData": {
+        "LogoName": "Curriculum vitae",
+        "Links": [
+            {
+                "name": "About",
+                "link": "/"
+            },
+            {
+                "name": "Skills",
+                "link": "/Skills"
+            },
+            {
+                "name": "Projects",
+                "link": "/Projects"
+            },
+            {
+                "name": "Contact",
+                "link": "/Contact"
+            },
+            {
+                "name": "Resume",
+                "link": "/Resume"
+            }
+        ]
+    },
+    "AboutData": {
+        "Name": "<AjaySingh/>",
+        "Title": "A Web Weaving Wizardry",
+        "Description": "A passionate software developer with a mission to transform innovative ideas into robust and scalable digital solutions . With a keen eye for detail and a love for elegant code, I navigate the ever-evolving landscape of technology.",
+        "Nationality": "Indian",
+        "ReDirectLink": {
+            "GitHub": "https://github.com/Ajayvirmoti/",
+            "LeetCode": "https://leetcode.com/ajayvirmoti_personal/",
+            "LinkedIn": "https://www.linkedin.com/in/ajay-virmoti-21ab931b2/",
+            "x": "https://twitter.com/ajayvirmoti",
+            "insta": "https://www.instagram.com/ajayvirmoti/"
+        }
+    },
+    "ProjectData": [
+        {
+            "project": {
+                "title": "Profile",
+                "logo": "profileBanner.png",
+                "about": "Portfolio React Web Application",
+                "tech": [
+                    {
+                        "name": "ReactJs"
+                    },
+                    {
+                        "name": "Nodejs"
+                    },
+                    {
+                        "name": "CSS"
+                    }
+                ]
+            }
+        },
+        {
+            "project": {
+                "title": "Nex",
+                "logo": "nex.gif",
+                "about": "Chat Application",
+                "tech": [
+                    {
+                        "name": "ReactJs"
+                    },
+                    {
+                        "name": "Nodejs"
+                    },
+                    {
+                        "name": "Expressjs"
+                    }
+                ]
+            }
+        },
+        {
+            "project": {
+                "title": "Quizz Application",
+                "logo": "quizzBanner.png",
+                "about": "A quizz react web application",
+                "tech": [
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name": "ReactJs"
+                    },
+                    {
+                        "name": "Firebase"
+                    }
+                ]
+            }
+        },
+        {
+            "project": {
+                "title": "Hyprland Rice",
+                "logo": "hyprBanner.jpg",
+                "about": "Linux desktop environment setup",
+                "tech": [
+                    {
+                        "name": "Arch"
+                    },
+                    {
+                        "name": "Shell"
+                    },
+                    {
+                        "name": "SDDM"
+                    },
+                    {
+                        "name": "swww"
+                    }
+                ]
+            }
+        },
+        {
+            "project": {
+                "title": "Charitable",
+                "logo": "charitableBanner.jpg",
+                "about": "Charity website",
+                "tech": [
+                    {
+                        "name": "HTML"
+                    },
+                    {
+                        "name": "CSS"
+                    },
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name": "Firebase"
+                    }
+                ]
+            }
+        }
+    ],
+    "skillsData": [
+        {
+            "skill": {
+                "title": "FrontEnd",
+                "skills": [
+                    {
+                        "name": "HTML",
+                        "borderCol": ""
+                    },
+                    {
+                        "name": "CSS",
+                        "borderCol": ""
+                    },
+                    {
+                        "name": "JavaScript",
+                        "borderCol": "#1c7e42"
+                    },
+                    {
+                        "name": "TypeScript",
+                        "borderCol": ""
+                    },
+                    {
+                        "name": "Tailwind",
+                        "borderCol": "#94730e"
+                    },
+                    {
+                        "name": "ReactJs",
+                        "borderCol": "#2b569d"
+                    },
+                    {
+                        "name": "Redux",
+                        "borderCol": ""
+                    }
+                ]
+            }
+        },
+        {
+            "skill": {
+                "title": "Backend",
+                "skills": [
+                    {
+                        "name": "Nodejs",
+                        "borderCol": "#1c7e42"
+                    },
+                    {
+                        "name": "Expressjs",
+                        "borderCol": "#94730e"
+                    }
+                ]
+            }
+        },
+        {
+            "skill": {
+                "title": "Database",
+                "skills": [
+                    {
+                        "name": "MySql",
+                        "borderCol": "#94730e"
+                    },
+                    {
+                        "name": "MongoDB",
+                        "borderCol": "#2b569d"
+                    },
+                    {
+                        "name": "Firebase",
+                        "borderCol": "#1c7e42"
+                    }
+                ]
+            }
+        },
+        {
+            "skill": {
+                "title": "Others",
+                "skills": [
+                    {
+                        "name": "Java",
+                        "borderCol": "#973032"
+                    },
+                    {
+                        "name": "DSA",
+                        "borderCol": "#2b569d"
+                    },
+                    {
+                        "name": "Git",
+                        "borderCol": "#94730e"
+                    },
+                    {
+                        "name": "Linux",
+                        "borderCol": "#9d4d17"
+                    },
+                    {
+                        "name": "RESTful APIs",
+                        "borderCol": "#1c7e42"
+                    }
+                ]
+            }
+        }
+    ],
+    "otherData": {
+        "Data": [
+            {
+                "card": {
+                    "title": "GeeksForGeeks",
+                    "logo": "gfg.webp",
+                    "about": "Contributed a article improvement on GeeksForGeeks"
+                }
+            },
+            {
+                "card": {
+                    "title": "LeetCode",
+                    "logo": "profileBanner.png",
+                    "about": "Solved 200* Leetcode question..."
+                }
+            },
+            {
+                "card": {
+                    "title": "Hacktoberfest",
+                    "logo": "hacktober.png",
+                    "about": "Succesfully completed Hacktoberfest 2022"
+                }
+            },
+            {
+                "card": {
+                    "title": "HackerRank",
+                    "logo": "hacktober.png",
+                    "about": "Java 5 Star Batch"
+                }
+            },
+            {
+                "card": {
+                    "title": "HackerRank",
+                    "logo": "hackerrank.webp",
+                    "about": "Problem Solving 5 Star Batch"
+                }
+            },
+            {
+                "card": {
+                    "title": "HackerRank",
+                    "logo": "hackerrank.webp",
+                    "about": "Certification of Java Basic"
+                }
+            },
+            {
+                "card": {
+                    "title": "HackerRank",
+                    "logo": "hackerrank.webp",
+                    "about": "Certification of Python Basic"
+                }
+            }
+        ],
+        "SeeMore": [
+            {
+                "card": {
+                    "title": "HackerRank",
+                    "logo": "hackerrank.webp",
+                    "about": "Certification of Python Basic"
+                }
+            }
+        ]
+    }
+}

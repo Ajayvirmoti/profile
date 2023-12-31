@@ -4,11 +4,12 @@ import 'react-toggle/style.css';
 import { TfiDownload } from "react-icons/tfi";
 import { PiStackOverflowLogoThin } from "react-icons/pi";
 import { HiOutlineEmojiHappy } from "react-icons/hi";
-import { Link as LinkScroll } from 'react-scroll';
+import { Link as LinkScroll, ScrollLink } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
 import Toggle from './Toggle';
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { Triangle } from 'react-loader-spinner';
+import Data from "../Assets/ProfileData.json";
 const NavBar = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -19,7 +20,7 @@ const NavBar = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   // const [isPanelOpen, setPanelOpen] = useState(false);
   useEffect(() => {
-    
+
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
@@ -27,7 +28,7 @@ const NavBar = () => {
   const isToggleClickHandler = () => {
     setToggle(!isToggle);
   }
-  
+
 
 
   // Handel window scroll
@@ -45,7 +46,7 @@ const NavBar = () => {
     setPrevScrollPos(currentScrollPos);
   };
   useEffect(() => {
-    if(!isToggle){
+    if (!isToggle) {
       window.addEventListener('scroll', handleScroll);
     }
 
@@ -57,7 +58,7 @@ const NavBar = () => {
   return (
     <nav className={`navbar ${isVisible ? 'visible' : 'hidden'} ${hasBackground ? 'background' : ''}`}>
       <div className="loader-logo">
-        {window.innerWidth>=768 ? <div className='title'>Curriculum vitae</div> : <Triangle
+        {window.innerWidth >= 768 ? <div className='title'>{Data.NavBarData.LogoName}</div> : <Triangle
           visible={true}
           height="30"
           width="30"
@@ -80,8 +81,7 @@ const NavBar = () => {
 
               };
             }}
-          >
-            <div className='menu-items'  >About <HiOutlineEmojiHappy /></div>
+          ><div className='menu-items'>{Data.NavBarData.Links[0].name} <HiOutlineEmojiHappy /></div>
           </NavLink>
           <NavLink
             to=""
@@ -103,7 +103,7 @@ const NavBar = () => {
               offset={-70}
               duration={600}
             >
-              <div className='menu-items'>Skill <PiStackOverflowLogoThin /></div>
+              <div className='menu-items'>{Data.NavBarData.Links[1].name} <PiStackOverflowLogoThin /></div>
             </LinkScroll>
           </NavLink>
           <NavLink
@@ -125,7 +125,7 @@ const NavBar = () => {
               offset={-70}
               duration={600}
             >
-              <div className='menu-items'>Projects </div>
+              <div className='menu-items'>{Data.NavBarData.Links[2].name}</div>
             </LinkScroll>
           </NavLink>
           <NavLink
@@ -140,12 +140,12 @@ const NavBar = () => {
               };
             }}
           >
-            <div className='menu-items'>Contact </div>
+            <div className='menu-items'>{Data.NavBarData.Links[3].name} </div>
           </NavLink>
           <div
             onClick={() => null}
             className="navbar-resume-button">
-            <h5>RESUME</h5> <TfiDownload />
+            <h5>{Data.NavBarData.Links[4].name}</h5> <TfiDownload />
           </div>
         </div>
       ) : (isToggle ? (<HiOutlineMenuAlt3 onClick={isToggleClickHandler} className="toggle-icon" />) : (<div className='toggle-container'><Toggle isToggleProp={isToggleClickHandler} /></div>))

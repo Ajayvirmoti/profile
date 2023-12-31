@@ -1,17 +1,16 @@
 import React from "react";
 import "./Skills.css";
-import skillsData from "../../Assets/Skill_Set.json";
+import Data from "../../Assets/ProfileData.json";
 import Jello from 'react-reveal/Jello';
 import RubberBand from 'react-reveal/RubberBand';
 const Skills = () => {
-    let borderCol = "";
     return (
         <div className="skill-container" id="Skills">
             <RubberBand>
                 <h1 className="skill-container__title">What I Know</h1>
             </RubberBand>
             <div className="skill-container__Cards">
-                {skillsData.skillsData.map((skillType) => (
+                {Data.skillsData.map((skillType) => (
                     <Jello>
                         <div className="skills__Card">
                             <div className="skills__title">

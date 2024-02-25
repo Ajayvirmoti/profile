@@ -28,7 +28,7 @@ const App = () => {
     return (
       <div className="app" >
         {/*  */}
-        
+
       </div>
     )
   }
@@ -42,26 +42,24 @@ const App = () => {
       </audio>
       <NavBar />
       <div className="app__body">
-      {isPhone?<AnimatedCursor
+        {isPhone ? <AnimatedCursor
           innerSize={8}
           outerSize={35}
-          color='255,255,255'
+          color='255, 255, 205'
           outerAlpha={0.1}
           innerScale={2}
           outerScale={2}
-          outerStyle={{
-            mixBlendMode: 'exclusion'
-          }}
-        />:""}
+
+        /> : ""}
         <div className='App-Body'>
           {/* <Inventory /> */}
           <Routes>
-            <Route path='/' element={<Inventory/>}/>
-            <Route path='/Contact' element={<Contact/>}/>
+            <Route path='/' element={<Inventory />} />
+            <Route path='/Contact' element={<Contact />} />
           </Routes>
           <Footer />
         </div>
-        </div>
+      </div>
     </div>
   );
 };

@@ -43,6 +43,7 @@
                 "title": "Profile",
                 "logo": "profileBanner.png",
                 "about": "Portfolio React Web Application",
+                "github":"https://github.com/Ajayvirmoti/profile.git",
                 "tech": [
                     {
                         "name": "ReactJs"
@@ -61,6 +62,7 @@
                 "title": "Nex",
                 "logo": "nex.gif",
                 "about": "Chat Application",
+                "github":"https://github.com/Ajayvirmoti/nexchat",
                 "tech": [
                     {
                         "name": "ReactJs"
@@ -79,6 +81,7 @@
                 "title": "Quizz Application",
                 "logo": "quizzBanner.png",
                 "about": "A quizz react web application",
+                "github":"https://github.com/Ajayvirmoti/quizzzery",
                 "tech": [
                     {
                         "name": "JavaScript"
@@ -97,6 +100,7 @@
                 "title": "Hyprland Rice",
                 "logo": "hyprBanner.jpg",
                 "about": "Linux desktop environment setup",
+                "github":"https://github.com/Ajayvirmoti/hyprland-rice",
                 "tech": [
                     {
                         "name": "Arch"
@@ -118,6 +122,7 @@
                 "title": "Charitable",
                 "logo": "charitableBanner.jpg",
                 "about": "Charity website",
+                "github":"https://github.com/Ajayvirmoti/Project-Charitable",
                 "tech": [
                     {
                         "name": "HTML"
@@ -130,6 +135,28 @@
                     },
                     {
                         "name": "Firebase"
+                    }
+                ]
+            }
+        },
+        {
+            "project": {
+                "title": "URL Short",
+                "logo": "urlshort.png",
+                "about": "User based URL Shortner",
+                "github":"https://github.com/Ajayvirmoti/url-shortener",
+                "tech": [
+                    {
+                        "name":"Nodejs"
+                    },
+                    {
+                        "name": "JavaScript"
+                    },
+                    {
+                        "name": "CSS"
+                    },
+                    {
+                        "name": "MongoDB"
                     }
                 ]
             }

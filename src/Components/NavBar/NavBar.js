@@ -83,29 +83,7 @@ const NavBar = () => {
             }}
           ><div className='menu-items'>{Data.NavBarData.Links[0].name} <HiOutlineEmojiHappy /></div>
           </NavLink>
-          <NavLink
-            to=""
-            style={({ isActive, isPending, isTransitioning }) => {
-              return {
-                textDecoration: isPending ? "overline 2px" : "none",
-                fontWeight: isActive ? "bold" : "",
-                textDecoration: isActive ? "none" : "none",
-                color: isActive ? "inherit" : "inherit",
-                viewTransitionName: isTransitioning ? "slide" : "",
 
-              };
-            }}
-          >
-            <LinkScroll
-              to="Skills"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={600}
-            >
-              <div className='menu-items'>{Data.NavBarData.Links[1].name} <PiStackOverflowLogoThin /></div>
-            </LinkScroll>
-          </NavLink>
           <NavLink
             to="/"
             style={({ isActive, isPending, isTransitioning }) => {
@@ -126,6 +104,31 @@ const NavBar = () => {
               duration={600}
             >
               <div className='menu-items'>{Data.NavBarData.Links[2].name}</div>
+            </LinkScroll>
+          </NavLink>
+
+
+          <NavLink
+            to="/"
+            style={({ isActive, isPending, isTransitioning }) => {
+              return {
+                textDecoration: isPending ? "overline 2px" : "none",
+                fontWeight: isActive ? "bold" : "",
+                textDecoration: isActive ? "none" : "none",
+                color: isActive ? "inherit" : "inherit",
+                viewTransitionName: isTransitioning ? "slide" : "",
+
+              };
+            }}
+          >
+            <LinkScroll
+              to="Skills"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={600}
+            >
+              <div className='menu-items'>{Data.NavBarData.Links[1].name} <PiStackOverflowLogoThin /></div>
             </LinkScroll>
           </NavLink>
           <NavLink

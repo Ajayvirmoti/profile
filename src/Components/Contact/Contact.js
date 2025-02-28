@@ -79,7 +79,7 @@ const Contact = () => {
 
     return (
         <div className="contact-form-container">
-            <img src={robo}/>
+            {/* <img src={robo}/> */}
 
             <div className="contact-form">
                 <h2>Contact Me</h2>

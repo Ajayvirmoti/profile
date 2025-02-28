@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a92a5632.css",
+    "main.js": "/static/js/main.4fe3d9c5.js",
+    "static/js/787.e6fe0fcf.chunk.js": "/static/js/787.e6fe0fcf.chunk.js",
+    "static/media/giphy1.gif": "/static/media/giphy1.e8db0e85b608d71841b0.gif",
+    "static/media/hack.gif": "/static/media/hack.5489b64c3441adb31fc3.gif",
+    "static/media/geekLogo.webp": "/static/media/geekLogo.9810385493176490a741.webp",
+    "static/media/nex.gif": "/static/media/nex.76f1237fc659b26d4cf4.gif",
+    "static/media/hacktober.png": "/static/media/hacktober.3e92aec156c16394ccd7.png",
+    "static/media/profileBanner.png": "/static/media/profileBanner.88d469dd33d98e5c97a9.png",
+    "static/media/quizzBanner.png": "/static/media/quizzBanner.3f84e2b7bd539827fb43.png",
+    "static/media/giphyRobo.gif": "/static/media/giphyRobo.b0b65f19327867289090.gif",
+    "static/media/penguin-1152058_640.png": "/static/media/penguin-1152058_640.e7da5b097ac16aa2aaa6.png",
+    "static/media/hyprBanner.jpg": "/static/media/hyprBanner.2360af13f8494933bd22.jpg",
+    "static/media/call.webp": "/static/media/call.d3391d5bbda552a4afc1.webp",
+    "static/media/charitableBanner.jpg": "/static/media/charitableBanner.efa8922f7127b4303eab.jpg",
+    "static/media/giphy.gif": "/static/media/giphy.2f50901eca9d7605f954.gif",
+    "static/media/gfg.webp": "/static/media/gfg.272362ad09f5bb40f9f3.webp",
+    "static/media/hackerrank.webp": "/static/media/hackerrank.a2c60c66be5edb172a1b.webp",
+    "index.html": "/index.html",
+    "static/media/hackerrank.svg": "/static/media/hackerrank.3a34e5f883427c444067.svg",
+    "main.a92a5632.css.map": "/static/css/main.a92a5632.css.map",
+    "main.4fe3d9c5.js.map": "/static/js/main.4fe3d9c5.js.map",
+    "787.e6fe0fcf.chunk.js.map": "/static/js/787.e6fe0fcf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a92a5632.css",
+    "static/js/main.4fe3d9c5.js"
+  ]
+}

@@ -78,6 +78,25 @@
         },
         {
             "project": {
+                "title": "Nex2",
+                "logo": "nex.gif",
+                "about": "Chat Application",
+                "github":"https://github.com/Ajayvirmoti/nexchat",
+                "tech": [
+                    {
+                        "name": "ReactJs"
+                    },
+                    {
+                        "name": "Nodejs"
+                    },
+                    {
+                        "name": "Expressjs"
+                    }
+                ]
+            }
+        },
+        {
+            "project": {
                 "title": "Quizz Application",
                 "logo": "quizzBanner.png",
                 "about": "A quizz react web application",
